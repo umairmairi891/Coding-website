@@ -10,11 +10,11 @@ function Home() {
                     <div className='sm:col-span-6 '>
                         <h2 className='text-2xl font-bold font-[Popins]'>Explore Every Programming Languages in one Place</h2>
                <TypedHeading/>
-                    <button className='mt-4 cursor-pointer bg-indigo-800 px-3 text-white py-2 rounded-xl'>Browse Languages</button>
-                    <button className='md:ml-3 ml-0 cursor-pointer mt-4 sm:mt-0 bg-purple-600 px-3 py-2 rounded-xl text-white'>Start Learning</button>
+                    <button className='mt-4 cursor-pointer bg-indigo-800 px-3 text-white py-2 rounded'>Browse Languages</button>
+                    <button className='md:ml-3 ml-3 cursor-pointer mt-4 sm:mt-0 bg-purple-600 px-3 py-2 rounded text-white'>Start Learning</button>
                     </div>
-                    <div className='sm:col-span-6 ml-5  mt-5 sm:mt-0 bg-amber-400'>
-                        <img className='w-full h-full  rounded ' src="src/Images/Gemini_Generated_Image_jtostqjtostqjtos.png" alt="" />
+                    <div className='sm:col-span-6 ml-5 mx-3 mt-5 sm:mt-0 bg-amber-400'>
+                        <img className='w-full h-full  rounded ' src="/src/Images/Gemini_Generated_Image_jtostqjtostqjtos.png" alt="" />
                     </div>
                 </div>
 
