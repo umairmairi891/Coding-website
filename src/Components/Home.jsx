@@ -1,6 +1,8 @@
 
 import React, { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
+import myImage from '../Images/Gemini_Generated_Image_jtostqjtostqjtos.png';
+
 
 function Home() {
     return (
@@ -14,7 +16,7 @@ function Home() {
                     <button className='md:ml-3 ml-3 cursor-pointer mt-4 sm:mt-0 bg-purple-600 px-3 py-2 rounded text-white'>Start Learning</button>
                     </div>
                     <div className='sm:col-span-6 ml-0 md:ml-5 mx-2 mt-5 sm:mt-0 bg-amber-400'>
-                        <img className='w-full h-full  rounded ' src="src/Images/Gemini_Generated_Image_jtostqjtostqjtos.png" alt="" />
+                        <img className='w-full h-full  rounded ' src={myImage} alt="" />
                     </div>
                 </div>
 
@@ -81,7 +83,7 @@ function Home() {
       return (
         <div>
           <h3 className='text-xl font-bold font-[Roboto] mt-3'>
-            <span ref={el}></span> {/* The span where the typing effect will appear */}
+            <span  ref={el}></span> {/* The span where the typing effect will appear */}
           </h3>
         </div>
       );

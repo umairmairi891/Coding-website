@@ -69,7 +69,8 @@ function Footer() {
                                 </NavLink>
                             </li>
                             <li className="py-1">
-                                <NavLink>
+                                <NavLink to='/contactus' className={({isActive})=>`
+                                ${isActive? "text-orange-600 font-bold" :"text-white"}`}>
                                     Contact Us
                                 </NavLink>
                             </li>

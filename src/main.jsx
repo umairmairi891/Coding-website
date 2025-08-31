@@ -4,6 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import Home from './Components/Home.jsx'
 import About from './Components/About.jsx'
+import ContactUs from './Components/Footer/Contact.jsx'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider, Routes } from 'react-router-dom'
 import Syntax from './Components/Syntax.jsx'
 import PythonSyntax from './Components/Languages/PythonSyntax.jsx'
@@ -15,6 +16,7 @@ const router =createBrowserRouter(
     <Route path='/' element={<App/>}>
       <Route path='' element={<Home/>} />
       <Route path='about' element={<About/>} />
+      <Route path='contactus' element={<ContactUs/>} />
       <Route path='syntax' element={<Syntax/>}/>
       <Route path='pythonsyntax' element={<PythonSyntax/>}/>
       <Route path='jssyntax' element={<JsSyntax/>}/>
