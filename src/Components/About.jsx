@@ -5,7 +5,7 @@ import Typed from 'typed.js';
 function About(){
     return(
         <>
-        <div className='px-5 py-5 mt-3 '>
+        <div className='px-5 py-5 mt-3 mx-1 md:mx-10 '>
             <div className='flex  flex-col justify-center items-center'>
                 <h2 className="text-2xl font-bold font-[Popins]">Who we are</h2>
                 <p className="block font-[Roboto] py-3 text-xl">Empowering developers through <TypedHeading/> </p>
@@ -36,7 +36,7 @@ function About(){
 <div className="bg-white-400 p-3 rounded mt-4" style={{boxShadow:'0px 4px 6px rgba(0,0,0,0.1), 0px 1px 3px rgba(0,0,0,0.08)'}}>
                   <h2 className='font-bold py-2 text-2xl border-l-6 pl-5 border-indigo-800 '>Meet the Team</h2>
                   <p className="px-5 font-thin text-xl py-2">For question, feedback or collaboration</p>
-                  <p className="px-5 font-thin text-xl py-2">Contact@codecompanion.com</p>
+                  <p className="px-5 font-thin text-xl py-2 overflow-auto">Contact@codecompanion.com</p>
                 </div>
 
             </div>

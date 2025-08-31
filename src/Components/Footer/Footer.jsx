@@ -6,7 +6,7 @@ function Footer() {
             <div className="bg-gray-800 w-full ">
                 <div className=" flex flex-col md:flex-row justify-around gap-4">
                     <div className="px-10 py-5 text-white ">
-                        <h2 className="font-bold  text-2xl">About Us</h2>
+                        <h2 className="font-bold  text-2xl font-[Roboto]">About Us</h2>
                         <ul className="font-thin mt-2 ">
                             <li className="py-1">
                                 <NavLink>
@@ -43,9 +43,7 @@ function Footer() {
                                 </NavLink>
                             </li>
                             <li className="py-1">
-                                <NavLink to='/about' className={({ isActive }) =>
-                                    `${isActive ? 'text-orange-600 font-bold' : "text-white"}`
-                                }>
+                                <NavLink   >
                                     API References
                                 </NavLink>
                             </li>
@@ -58,7 +56,7 @@ function Footer() {
                     </div>
 
                     <div className="px-10 sm:px-0 py-5 text-white ">
-                        <h2 className="font-bold text-2xl">Contact Info</h2>
+                        <h2 className="font-bold text-2xl font-[Roboto]">Contact Info</h2>
                         <ul className="font-thin mt-4">
                             <li className="py-1">
                                 <NavLink>
@@ -66,9 +64,7 @@ function Footer() {
                                 </NavLink>
                             </li>
                             <li className="py-1">
-                                <NavLink to='/about' className={({ isActive }) =>
-                                    `${isActive ? 'text-orange-600 font-bold' : "text-white"}`
-                                }>
+                                <NavLink >
                                     Privacy Policy
                                 </NavLink>
                             </li>
@@ -81,8 +77,8 @@ function Footer() {
                     </div>
 
                     <div className="px-10 py-5 text-white ">
-                        <h2 className="font-bold text-xl">Social Links</h2>
-                        <div className="flex gap-4">
+                        <h2 className="font-bold text-xl font-[Roboto]">Social Links</h2>
+                        <div className="flex gap-4 mt-4">
                             <div> <i className="fa-solid fa-facebook"></i></div>
                             <div> <i className="fa-solid fa-facebook"></i></div>
                             <div> <i className="fa-solid fa-facebook"></i></div>
