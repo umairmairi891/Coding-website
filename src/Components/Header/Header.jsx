@@ -10,7 +10,7 @@ const[isOpen, setIsOpen]=useState(false)
         <div className='flex justify-between items-center px-5'>
           <div>
             <Link to='/'>
-              <img className='w-25 h-12 mt-2' src="/src/Images/Gemini_Generated_Image_jtostqjtostqjtos-removebg-preview.png" alt="" />
+              <img className='w-25 h-12 mt-2' src="/Images/Gemini_Generated_Image_jtostqjtostqjtos-removebg-preview.png" alt="" />
             </Link>
           </div>
           <div className='flex '>
