@@ -12,7 +12,7 @@ function Home() {
                         <h2 className='text-2xl font-bold font-[Popins]'>Explore Every Programming Languages in one Place</h2>
                <TypedHeading/>
                     <button className='mt-4 cursor-pointer bg-indigo-800 px-3 text-white py-2 rounded'>Browse Languages</button>
-                    <button className='md:ml-3 ml-3 cursor-pointer mt-4 sm:mt-0 bg-purple-600 px-3 py-2 rounded text-white'>Start Learning</button>
+                    <button className='md:ml-3 ml-3 cursor-pointer mt-4 sm:mt-1 bg-purple-600 px-3 py-2 rounded text-white'>Start Learning</button>
                     </div>
                     <div className='sm:col-span-6 ml-0 md:ml-5 mx-2 mt-5 sm:mt-0 bg-amber-400'>
                         <img className='w-full h-full  rounded ' src='/Images/Gemini_Generated_Image_jtostqjtostqjtos.png' alt="" />
@@ -20,7 +20,7 @@ function Home() {
                 </div>
 
               <div className='grid grid-cols-1 sm:grid-cols-12 w-[100%] sm:w-full  mt-5 '>
-                    <div className='bg-gray-600 p-3 w- sm:col-span-3 max-h-[510px] md:max-h-[280px] lg:max-h-[350px] xl:max-h-[510px] overflow-auto text-xl text-white font-[Roboto] rounded'>
+                    <div className='bg-gray-600 p-3 w-[100%] sm:col-span-3 max-h-[510px]  md:max-h-[280px] lg:max-h-[350px] xl:max-h-[510px] overflow-auto text-xl text-white font-[Roboto] rounded'>
                         <h2 className='font-bold px-2'>Languages</h2>
                         <input className='bg-white text-black rounded w-full px-3 py-2 mt-2 md:text-base' type="text" placeholder='Search Langauges' />
                         <h3 className='text-center mt-4 md:mt-1 lg:mt-4 font-semibold md:text-base hover:bg-blue-600 cursor-pointer rounded py-2 md:py-0 lg:py-2'>Papular Languages</h3>

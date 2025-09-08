@@ -10,17 +10,35 @@ import Syntax from './Components/Syntax.jsx'
 import PythonSyntax from './Components/Languages/PythonSyntax.jsx'
 import JsSyntax from './Components/Languages/JsSyntax.jsx'
 import CplusplusSyntax from './Components/Languages/CplusplusSyntax.jsx'
+import Community from './Components/Footer/Community.jsx'
+import Career from './Components/Footer/Career.jsx'
+import Team from './Components/Footer/Team.jsx'
+import JavaScript from './Components/Languages/JavaScript.jsx'
+import Documentation from './Components/Footer/Documentation.jsx'
+import API from './Components/Footer/API.jsx'
+import Blog from './Components/Footer/BLog.jsx'
+import Support from './Components/Footer/Support.jsx'
+import Privacy from './Components/Footer/Privacy.jsx'
 
 const router =createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App/>}>
       <Route path='' element={<Home/>} />
       <Route path='about' element={<About/>} />
+      <Route path='community' element={<Community/>} />
+      <Route path='career' element={<Career/>} />
+      <Route path='team' element={<Team/>} />
       <Route path='contactus' element={<ContactUs/>} />
+      <Route path='documentation' element={<Documentation/>} />
+      <Route path='api' element={<API/>} />
+      <Route path='blog' element={<Blog/>} />
+      <Route path='support' element={<Support/>} />
+      <Route path='privacy' element={<Privacy/>} />
       <Route path='syntax' element={<Syntax/>}/>
       <Route path='pythonsyntax' element={<PythonSyntax/>}/>
       <Route path='jssyntax' element={<JsSyntax/>}/>
       <Route path='cplusplussyntax' element={<CplusplusSyntax/>}/>
+      <Route path='javascript' element={<JavaScript/>}/>
     </Route>
   )
 )

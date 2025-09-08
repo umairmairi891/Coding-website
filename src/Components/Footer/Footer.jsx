@@ -9,7 +9,9 @@ function Footer() {
                         <h2 className="font-bold  text-2xl font-[Roboto]">About Us</h2>
                         <ul className="font-thin mt-2 ">
                             <li className="py-1">
-                                <NavLink>
+                                <NavLink to='/community' className={({ isActive }) =>
+                                    `${isActive ? 'text-orange-600 font-bold' : "text-white"}`
+                                }>
                                     Community
                                 </NavLink>
                             </li>
@@ -20,13 +22,17 @@ function Footer() {
                                     About Us
                                 </NavLink>
                             </li >
-                            <li className="py-1">
-                                <NavLink>
+                            <li className="py-1" to>
+                                <NavLink to='/career' className={({ isActive }) =>
+                                    `${isActive ? 'text-orange-600 font-bold' : "text-white"}`
+                                }>
                                     Career
                                 </NavLink>
                             </li>
-                            <li className="py-1">
-                                <NavLink>
+                            <li className="py-1" >
+                                <NavLink to='/team' className={({ isActive }) =>
+                                    `${isActive ? 'text-orange-600 font-bold' : "text-white"}`
+                                }>
                                     Team
                                 </NavLink>
                             </li>
@@ -38,33 +44,36 @@ function Footer() {
                         <h2 className="font-bold text-2xl font-[Roboto]">Quick Links</h2>
                         <ul className="font-thin mt-2">
                             <li className="py-1">
-                                <NavLink>
+                                <NavLink to='/documentation' className={({isActive})=>`
+                                ${isActive? 'text-orange-600 font-bold':'text-white'}`} >
                                     Documentation
                                 </NavLink>
                             </li>
                             <li className="py-1">
-                                <NavLink   >
+                                <NavLink  to='/api' className={({isActive})=>`
+                                ${isActive? "text-orange-600 font-bold": "text-white"}`} >
                                     API References
                                 </NavLink>
                             </li>
                             <li className="py-1">
-                                <NavLink>
+                                <NavLink to='/blog' className={({isActive})=>`${isActive ?"text-orange-600 font-bold":"text-white"}`}>
                                     Blog
                                 </NavLink>
                             </li>
                         </ul>
                     </div>
 
-                    <div className="px-10 sm:px-0 py-5 text-white ">
+                    <div className="px-10  py-5 text-white ">
                         <h2 className="font-bold text-2xl font-[Roboto]">Contact Info</h2>
                         <ul className="font-thin mt-4">
                             <li className="py-1">
-                                <NavLink>
+                                <NavLink to='/support' className={({isActive})=>`
+                                ${isActive? "text-orange-600 font-bold": "text-white"}`}>
                                     Support Center
                                 </NavLink>
                             </li>
                             <li className="py-1">
-                                <NavLink >
+                                <NavLink to='/privacy' className={({isActive})=>`${isActive?"text-orange-600 font-bold": "text-white"}`}>
                                     Privacy Policy
                                 </NavLink>
                             </li>
@@ -80,10 +89,10 @@ function Footer() {
                     <div className="px-10 py-5 text-white ">
                         <h2 className="font-bold text-xl font-[Roboto]">Social Links</h2>
                         <div className="flex gap-4 mt-4">
-                            <div> <i className="fa-solid fa-facebook"></i></div>
-                            <div> <i className="fa-solid fa-facebook"></i></div>
-                            <div> <i className="fa-solid fa-facebook"></i></div>
-                            <div> <i className="fa-solid fa-facebook"></i></div>
+                            <div> <i className="fab fa-facebook"></i></div>
+                            <div> <i className="fab fa-github"></i></div>
+                            <div> <i className="fab fa-linkedin"></i></div>
+                            <div> <i className="fab fa-twitter"></i></div>
                         </div>
                     </div>
 

@@ -33,7 +33,12 @@ const[isOpen, setIsOpen]=useState(false)
                   Syntax
                 </NavLink>
               </li>
-              <li>Languages</li>
+              <li>
+                <NavLink to='/javascript' className={({ isActive }) =>
+                  `${isActive ? 'text-orange-600 font-bold' : "text-white"}`}>
+                  Languages
+                </NavLink>
+              </li>
             </ul>
           </div >
                     <div className="block text-white md:hidden">
@@ -64,7 +69,12 @@ const[isOpen, setIsOpen]=useState(false)
                   Syntax
                 </NavLink>
               </li>
-              <li>Languages</li>
+              <li>
+                <NavLink to='/javascript' className={({ isActive }) =>
+                  `${isActive ? 'text-orange-600 font-bold' : "text-white"}`}>
+                  Languages
+                </NavLink>
+              </li>
             </ul>
           </div>
         )}

@@ -23,7 +23,7 @@ function About(){
                 </div>
 
 
-                <div className="bg-white-400 p-3 rounded mt-4" style={{boxShadow:'0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)'}}>
+                <div className="bg-white-400 p-3 rounded mt-4 " style={{boxShadow:'0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)'}}>
                   <h2 className='font-bold py-2 text-2xl border-l-6 pl-5 border-indigo-800'>What we offer</h2>
                   <ul className='mt-3 font-thin text-xl'>
                     <li><span className='mr-5 '>✔</span>Clean syntax reference pages for 50+ languages</li>
