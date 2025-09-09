@@ -89,7 +89,9 @@ function Footer() {
                     <div className="px-10 py-5 text-white ">
                         <h2 className="font-bold text-xl font-[Roboto]">Social Links</h2>
                         <div className="flex gap-4 mt-4">
-                            <div> <i className="fab fa-facebook"></i></div>
+                            <div> <a href="https://facebook.com">
+                                <i className="fab fa-facebook"></i>
+                                </a> </div>
                             <div> <i className="fab fa-github"></i></div>
                             <div> <i className="fab fa-linkedin"></i></div>
                             <div> <i className="fab fa-twitter"></i></div>

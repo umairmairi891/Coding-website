@@ -17,7 +17,7 @@ function JavaScript() {
                     isOpen && (
                         <div className="bg-cyan-900 h-auto  text-white  w-[100%] sm:sw-[30%] md:w-[30%] lg:w-[20%] absolute top-16 left-0 md:left-0">
                             <ul className=" text-lg font-[Roboto]">
-                                <NavLink className='flex justify-between items-center '>
+                                <NavLink className='flex justify-between items-center ' to='/jsintroduction'>
                                     <li className="py-3 px-4 w-[80%] hover:bg-gray-700  duration-300">Introduction</li>
                                     <i onClick={() => setisOpen(!isOpen)} className="fa-solid fa-xmark  text-center text-xl hover:bg-gray-700 w-[20%] py-4 px-3"></i>
                                 </NavLink>

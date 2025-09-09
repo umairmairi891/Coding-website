@@ -12,16 +12,14 @@ function JsSyntax(){
             <div className="bg-gray-600 text-center py-5 px-3 text-white rounded" style={{boxShadow:'0 4px 6px rgba(0,0,0,0.1),0 1px 3px rgba(0,0,0,0.08)'}}>
                 <h2 className="font-bold text-xl ">JavaScript Syntax</h2>
                 <p className="py-2 font-thin">Introduction to the syntax of JavaScript programming languages</p>
-                <NavLink onClick={()=>setisOpen(!isOpen)} className='bg-blue-900 cursor-pointer px-3 py-2 rounded mt-4 hover:bg-indigo-950 cursor-pointer'>
-                   <button className="font-semibold mt-3 cursor-pointer ">Start Learning more</button>
-                </NavLink>
+                    <button onClick={() => setisOpen(!isOpen)} className="bg-purple-900 hover:bg-purple-700 px-6 py-2 rounded-lg cursor-pointer mt-3 text-white">Start learning more</button>
             </div>
 
 {
                 isOpen &&(
                  <div className="bg-cyan-900 h-auto   text-white rounded w-[100%] sm:sw-[30%] md:w-[30%] lg:w-[20%] absolute top-16 left-0 md:left-0">
                      <ul className=" text-lg font-[Roboto]">
-                        <NavLink className='flex justify-between items-center '>
+                        <NavLink className='flex justify-between items-center ' to='/jsintroduction'>
                             <li className="py-3 px-4 w-[80%] hover:bg-gray-700  duration-300">Introduction</li>
                             <i onClick={()=>setisOpen(!isOpen)} className="fa-solid fa-xmark  text-center text-xl hover:bg-gray-700 w-[20%] py-4 px-3"></i>
                         </NavLink>

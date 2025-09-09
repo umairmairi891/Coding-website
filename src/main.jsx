@@ -19,6 +19,7 @@ import API from './Components/Footer/API.jsx'
 import Blog from './Components/Footer/BLog.jsx'
 import Support from './Components/Footer/Support.jsx'
 import Privacy from './Components/Footer/Privacy.jsx'
+import JsIntroduction from './Components/Languages/JavaScript/JsIntroduction.jsx'
 
 const router =createBrowserRouter(
   createRoutesFromElements(
@@ -39,6 +40,7 @@ const router =createBrowserRouter(
       <Route path='jssyntax' element={<JsSyntax/>}/>
       <Route path='cplusplussyntax' element={<CplusplusSyntax/>}/>
       <Route path='javascript' element={<JavaScript/>}/>
+      <Route path='jsintroduction' element={<JsIntroduction/>}/>
     </Route>
   )
 )
