@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { NavLink,Link } from "react-router-dom";
+import 'animate.css'
+import '/src/App.css' 
 function JavaScript() {
 
     const [isOpen, setisOpen] = useState(false)
@@ -15,12 +17,14 @@ function JavaScript() {
 
                 {
                     isOpen && (
-                        <div className="bg-cyan-900 h-auto  text-white  w-[100%] sm:sw-[30%] md:w-[30%] lg:w-[20%] absolute top-16 left-0 md:left-0">
+                        <div className="bg-cyan-900 navbar h-auto animate-animated  text-white  w-[100%] sm:sw-[30%] md:w-[30%] lg:w-[20%] absolute top-16 left-0 md:left-0">
                             <ul className=" text-lg font-[Roboto]">
-                                <NavLink className='flex justify-between items-center ' to='/jsintroduction'>
-                                    <li className="py-3 px-4 w-[80%] hover:bg-gray-700  duration-300">Introduction</li>
-                                    <i onClick={() => setisOpen(!isOpen)} className="fa-solid fa-xmark  text-center text-xl hover:bg-gray-700 w-[20%] py-4 px-3"></i>
+                                <div className="flex justify-between items-center">
+                                <NavLink className='w-[80%]  hover:bg-gray-700  duration-300' to='/jsintroduction'>
+                                    <li className="py-3 px-4  hover:bg-gray-700  duration-300">Introduction</li>
                                 </NavLink>
+                                    <i onClick={() => setisOpen(!isOpen)} className="fa-solid fa-xmark cursor-pointer  text-center text-xl hover:bg-gray-700 w-[20%] py-4 px-3"></i>
+                                </div>
                                 <NavLink>
                                     <li className="py-3 px-4 hover:bg-gray-700 hover:text-white duration-300">History</li>
                                 </NavLink>

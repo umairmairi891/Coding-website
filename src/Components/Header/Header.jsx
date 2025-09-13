@@ -3,7 +3,8 @@ import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function Header() {
-const[isOpen, setIsOpen]=useState(false)
+  const [isOpen, setIsOpen] = useState(false)
+  const [dropDown, setdropDown] = useState(false)
   return (
     <>
       <nav className='bg-sky-800 w-full h-16'>
@@ -34,21 +35,43 @@ const[isOpen, setIsOpen]=useState(false)
                 </NavLink>
               </li>
               <li>
-                <NavLink to='/javascript' className={({ isActive }) =>
-                  `${isActive ? 'text-orange-600 font-bold' : "text-white"}`}>
-                  Languages
-                </NavLink>
+                <div className="">
+                  <div className="cursor-pointer" onClick={() => { setdropDown(!dropDown) }}>
+                    Languages
+                  </div>
+                  {dropDown && (
+                    <div className=" absolute right-2 ">
+                      <ul className="bg-gray-300 rounded text-black">
+                        <li className="px-5 py-2 hover:bg-teal-500 duration-300 " onClick={() => { setdropDown(!dropDown) }}>
+                          <NavLink to='/javascript' >
+                            JavaScript
+                          </NavLink>
+                        </li>
+                        <li className="px-5 py-2  hover:bg-teal-500 duration-300" onClick={() => { setdropDown(!dropDown) }}>
+                          <NavLink to='/javascript' >
+                            JavaScript
+                          </NavLink>
+                        </li>
+                        <li className="px-5 py-2  hover:bg-teal-500 duration-300" onClick={() => { setdropDown(!dropDown) }}>
+                          <NavLink to='/javascript' >
+                            JavaScript
+                          </NavLink>
+                        </li>
+                      </ul>
+                    </div>
+                  )}
+                </div>
               </li>
             </ul>
           </div >
-                    <div className="block text-white md:hidden">
+          <div className="block text-white md:hidden">
             <button onClick={() => setIsOpen(!isOpen)}>
               <i className="fa-solid fa-bars text-2xl"></i>
             </button>
           </div>
 
         </div>
-                {isOpen && (
+        {isOpen && (
           <div className='md:hidden bg-sky-800 absolute w-full'>
             <ul className='flex flex-col text-white space-y-3 p-5 font-[Roboto] text-lg'>
               <li>
@@ -70,10 +93,32 @@ const[isOpen, setIsOpen]=useState(false)
                 </NavLink>
               </li>
               <li>
-                <NavLink to='/javascript' className={({ isActive }) =>
-                  `${isActive ? 'text-orange-600 font-bold' : "text-white"}`}>
-                  Languages
-                </NavLink>
+                <div className="">
+                  <div className="cursor-pointer" onClick={() => { setdropDown(!dropDown) }}>
+                    Languages
+                  </div>
+                  {dropDown && (
+                    <div className=" absolute  ">
+                      <ul className="bg-gray-300 rounded text-black">
+                        <li className="px-5 py-2 hover:bg-teal-500 duration-300 " onClick={() => { setdropDown(!dropDown) }}>
+                          <NavLink to='/javascript' >
+                            JavaScript
+                          </NavLink>
+                        </li>
+                        <li className="px-5 py-2  hover:bg-teal-500 duration-300" onClick={() => { setdropDown(!dropDown) }}>
+                          <NavLink to='/javascript' >
+                            JavaScript
+                          </NavLink>
+                        </li>
+                        <li className="px-5 py-2  hover:bg-teal-500 duration-300" onClick={() => { setdropDown(!dropDown) }}>
+                          <NavLink to='/javascript' >
+                            JavaScript
+                          </NavLink>
+                        </li>
+                      </ul>
+                    </div>
+                  )}
+                </div>
               </li>
             </ul>
           </div>
