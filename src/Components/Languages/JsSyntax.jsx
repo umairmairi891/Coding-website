@@ -23,10 +23,10 @@ function JsSyntax(){
                             <li className="py-3 px-4 w-[80%] hover:bg-gray-700  duration-300">Introduction</li>
                             <i onClick={()=>setisOpen(!isOpen)} className="fa-solid fa-xmark  text-center text-xl hover:bg-gray-700 w-[20%] py-4 px-3"></i>
                         </NavLink>
-                        <NavLink>
+                        <NavLink to='/jshistory'>
                             <li className="py-3 px-4 hover:bg-gray-700 hover:text-white duration-300">History</li>
                         </NavLink>
-                        <NavLink>
+                        <NavLink to='/jsworking'>
                             <li className="py-3 px-4 hover:bg-gray-700 hover:text-white duration-300">Working</li>
                         </NavLink>
                         <NavLink to='/jssyntax'>

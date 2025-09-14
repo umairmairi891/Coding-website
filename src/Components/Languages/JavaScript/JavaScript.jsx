@@ -25,10 +25,10 @@ function JavaScript() {
                                 </NavLink>
                                     <i onClick={() => setisOpen(!isOpen)} className="fa-solid fa-xmark cursor-pointer  text-center text-xl hover:bg-gray-700 w-[20%] py-4 px-3"></i>
                                 </div>
-                                <NavLink>
+                                <NavLink to='/jshistory'>
                                     <li className="py-3 px-4 hover:bg-gray-700 hover:text-white duration-300">History</li>
                                 </NavLink>
-                                <NavLink>
+                                <NavLink to='/jsworking' >
                                     <li className="py-3 px-4 hover:bg-gray-700 hover:text-white duration-300">Working</li>
                                 </NavLink>
                                 <NavLink to='/jssyntax'>

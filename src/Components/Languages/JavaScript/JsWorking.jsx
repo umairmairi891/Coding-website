@@ -1,19 +1,24 @@
-import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom';
-function JsIntroduction() {
+import React,{useState} from "react";
 
-    const [isOpen, setisOpen] = useState(false)
+import { NavLink } from 'react-router-dom';
+
+function JsWorking(){
+
+    
+    const [isOpen, setisOpen] = useState(false);
+
     return (
-        <>
-            <div className="bg-white w-full p-10">
-                <div className="bg-gray-600 text-center py-5 px-3 text-white rounded" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1),0 1px 3px rgba(0,0,0,0.08)' }}>
-                    <h2 className="font-bold text-xl font-[Itel] ">JavaScript Introduction</h2>
-                    <p className="py-2 font-thin">Welcome to the Introduction of JavaScript programming languages</p>
+<>
+
+<div className="p-10">
+        <div className="bg-gray-600 text-center py-5 px-3 text-white rounded" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1),0 1px 3px rgba(0,0,0,0.08)' }}>
+                    <h2 className="font-bold text-xl font-[Itel] ">JavaScript Working</h2>
+                    <p className="py-2 font-thin">Welcome to the Working of JavaScript programming languages</p>
                     <button onClick={() => setisOpen(!isOpen)} className="bg-purple-900 hover:bg-purple-700 px-6 py-2 rounded-lg cursor-pointer mt-3 text-white">Start learning more</button>
                 </div>
-
-                {
-                    isOpen && (
+</div>
+{
+     isOpen && (
                         <div className="bg-cyan-900 h-auto   text-white rounded w-[100%] sm:sw-[30%] md:w-[30%] lg:w-[20%] absolute top-16 left-0 md:left-0">
                             <ul className=" text-lg font-[Roboto]">
                                 <div className="flex justify-between items-center">
@@ -60,43 +65,30 @@ function JsIntroduction() {
                                 </NavLink>
                             </ul>
                         </div>
-                    )
-                }
-            </div>
+            )
+        }
 
-            <div className='mx-3 md:mx-10 py-5'>
-                <div className='p-5 w-full' style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
-                    <h2 className='border-l-5 border-blue-800 pl-5 font-bold font-[Roboto] text-2xl'>Introduction</h2>
-                    <p className="text-lg py-2 px-4">JavaScript is the programming language of the web.
-                        It can update and change both HTML and CSS.
-                        It can calculate, manipulate and validate data.
-                    </p>
-                    <p className="text-lg py-2 px-4">JavaScript is one of the 3 languages all web developers must learn:
-                        1. HTML to define the content of web pages
-                        2. CSS to specify the layout of web pages
-                        3. JavaScript to program the behavior of web pages
-                    </p>
-                </div>
 
-                <div className='p-5 w-full mt-4' style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
-                    <h2 className='border-l-5 border-blue-800 pl-5 font-bold font-[Roboto] text-2xl'>Key Aspects of JavaScript</h2>
-                    <p className="text-lg py-2 px-4">Client-Side Scripting: Originally, JavaScript was designed to run directly within web browsers (client-side), enabling dynamic and interactive elements on a webpage without requiring server communication for every action. This includes features like form validation, animations, interactive maps, and responsive user interfaces.
-                    </p>
-                    <p className="text-lg py-1 px-4 ">
-                        Server-Side Capabilities: With the advent of Node.js, JavaScript extended its reach to server-side development, allowing developers to build full-stack applications using a single language.
-                    </p>
-                    <p className="text-lg py-1 px-4">
-                        Dynamic and Interpreted: JavaScript is a dynamically typed language, meaning variable types are determined at runtime. It is also an interpreted language, executing code line by line without requiring a separate compilation step.
-                    </p>
-                    <p className="text-lg py-1 px-4">Object-Oriented and Event-Driven: JavaScript supports object-oriented programming concepts through prototypes and classes. It is also inherently event-driven, responding to user actions and other events within a web environment. 
+                <div className="mx-3 md:mx-10  mt-2 mb-4  " style={{boxShadow:'0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)'}}>
+                   <div className=" p-5">
+                    <h2 className="border-l-5 border-blue-800 pl-5 font-bold text-3xl font-[Roboto]">How JavaScript Works?</h2>
+                    <p className="text-lg font-serif py-2">JavaScript is a dynamically typed, cross-platform threaded scripting and programming language, used to put functionality and interactivity at the client side as well as to write logic on the server side of a website. It can display content updates, interactive maps, control multimedia, interactive forms, and many more.
 </p>
-<p className="text-lg py-1 px-4">
-    Integration with HTML and CSS: JavaScript seamlessly integrates with HTML and CSS, allowing manipulation of the Document Object Model (DOM) to dynamically change content, styles, and attributes of web page elements.
+<p className="text-lg font-serif py-2">JavaScript, in short JS, was created in 1995 by Brendan Eich, who was working at Netscape Communications. In the beginning, it was designed to add interactivity to websites. Currently, JavaScript can support both client-side and server-side development. It plays a very important role in modern web apps by helping developers manipulate the Document Object Model (DOM), handle user events, and communicate with servers asynchronously.
 </p>
+                   </div>
                 </div>
-            </div>
-        </>
+<div className="mx-3 md:mx-10  mt-2 mb-4  p-5" style={{boxShadow:'0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)'}}>
+    <h2 className="border-l-5 border-blue-800 pl-5 font-bold text-3xl font-[Roboto]">JavaScript Engines</h2>
+    <p className="text-lg font-serif py-2">JavaScript engines are responsible for executing JavaScript code. The two most important JavaScript engines are V8 (used in Chrome and Node.js) and SpiderMonkey (used in Firefox). These engines follow a similar process to interpret and execute JavaScript:
+</p>
+<h2 className="font-semibold font-[Itel] text-xl">How JavaScript Engines Interpret and Execute Code?</h2>
+<p className="text-lg font-serif py-2">Parsing: When we load a webpage or execute a script, the JavaScript engine first parses the source code to understand its structure. It converts the code into an Abstract Syntax Tree (AST) which is a hierarchical representation of the script.
+Compilation: Now in compilation phase, the engine translates the AST into machine-readable bytecode using JIT (Just-In-Time) compilation. JIT compilation optimizes performance by compiling frequently executed code segments at runtime.
+Execution: Finally, the bytecode or machine code is executed line by line, which produces the output or behavior as defined by the JavaScript code</p>
+</div>
+</>
     )
 }
 
-export default JsIntroduction;
+export default JsWorking;
