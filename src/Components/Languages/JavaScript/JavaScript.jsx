@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink,Link } from "react-router-dom";
-import 'animate.css'
+
 import '/src/App.css' 
 function JavaScript() {
 
