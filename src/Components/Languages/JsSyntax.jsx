@@ -1,6 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+
+import '/src/App.css' 
 function JsSyntax(){
 
 
@@ -17,7 +19,7 @@ function JsSyntax(){
 
 {
                 isOpen &&(
-                 <div className="bg-cyan-900 h-auto   text-white rounded w-[100%] sm:sw-[30%] md:w-[30%] lg:w-[20%] absolute top-16 left-0 md:left-0">
+                 <div className="bg-cyan-900 h-auto navbar animate-animated  text-white rounded w-[100%] sm:sw-[30%] md:w-[30%] lg:w-[20%] absolute top-16 left-0 md:left-0">
                      <ul className=" text-lg font-[Roboto]">
                         <NavLink className='flex justify-between items-center ' to='/jsintroduction'>
                             <li className="py-3 px-4 w-[80%] hover:bg-gray-700  duration-300">Introduction</li>
@@ -75,7 +77,7 @@ function JsSyntax(){
                     <p className="px-3">alert('Hello alert')</p>
                    </div>
                 </div>
-
+                
                 <div className=" p-4 col-span-12 sm:col-span-6 " style={{boxShadow:'0 4px 6px rgba(0,0,0,0.1),0 1px 3px rgba(0,0,0,0.08)'}}>
                    <h2 className="font-bold text-2xl border-l-5 border-indigo-800 pl-5">Variables</h2>
                    <p className="font-thin text-xl mt-3">Variables are dynamically typed and created when values assigned  </p>

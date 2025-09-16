@@ -15,7 +15,7 @@ function Home() {
                     <button className='md:ml-3 ml-3 cursor-pointer mt-4 sm:mt-1 bg-purple-600 px-3 py-2 rounded text-white'>Start Learning</button>
                     </div>
                     <div className='sm:col-span-6 ml-0 md:ml-5 mx-2 mt-5 sm:mt-0 bg-amber-400'>
-                        <img className='w-full h-full  rounded ' src='/Images/Gemini_Generated_Image_jtostqjtostqjtos.png' alt="" />
+                        <img className='w-full h-50  rounded ' src='public/Images/ChatGPT Image Jul 5, 2025, 05_20_23 PM_1.png' alt="" />
                     </div>
                 </div>
 
@@ -30,10 +30,10 @@ function Home() {
                             <li className='hover:bg-blue-600 px-3 rounded py-2'>C++</li>
                             <li className='hover:bg-blue-600 px-3 rounded py-2'>HTML</li>
                             <li className='hover:bg-blue-600 px-3 rounded py-2'>CSS</li>
-                            <li className='hover:bg-blue-600 px-3 rounded py-2'>CSS</li>
-                            <li className='hover:bg-blue-600 px-3 rounded py-2'>CSS</li>
-                            <li className='hover:bg-blue-600 px-3 rounded py-2'>CSS</li>
-                            <li className='hover:bg-blue-600 px-3 rounded py-2'>CSS</li>
+                            <li className='hover:bg-blue-600 px-3 rounded py-2'>Python</li>
+                            <li className='hover:bg-blue-600 px-3 rounded py-2'>Ruby</li>
+                            <li className='hover:bg-blue-600 px-3 rounded py-2'>SQL</li>
+                            <li className='hover:bg-blue-600 px-3 rounded py-2'></li>
                         </ul>
                     </div>
                     <div className='sm:col-span-8 ml-1 sm:ml-10'>

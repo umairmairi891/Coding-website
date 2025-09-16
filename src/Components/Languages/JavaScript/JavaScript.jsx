@@ -34,7 +34,7 @@ function JavaScript() {
                                 <NavLink to='/jssyntax'>
                                     <li className="py-3 px-4 hover:bg-gray-700 hover:text-white duration-300">Syntax</li>
                                 </NavLink>
-                                <NavLink>
+                                <NavLink to='/jsvariable'>
                                     <li className="py-3 px-4 hover:bg-gray-700 hover:text-white duration-300">Variables</li>
                                 </NavLink>
                                 <NavLink>

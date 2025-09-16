@@ -36,7 +36,7 @@ function Header() {
               </li>
               <li>
                 <div className="">
-                  <div className="cursor-pointer" onClick={() => { setdropDown(!dropDown) }}>
+                  <div className="cursor-pointer" onClick={() => {setdropDown(!dropDown) }}>
                     Languages
                   </div>
                   {dropDown && (
@@ -48,13 +48,13 @@ function Header() {
                           </NavLink>
                         </li>
                         <li className="px-5 py-2  hover:bg-teal-500 duration-300" onClick={() => { setdropDown(!dropDown) }}>
-                          <NavLink to='/javascript' >
-                            JavaScript
+                          <NavLink to='/python' >
+                            Python
                           </NavLink>
                         </li>
                         <li className="px-5 py-2  hover:bg-teal-500 duration-300" onClick={() => { setdropDown(!dropDown) }}>
-                          <NavLink to='/javascript' >
-                            JavaScript
+                          <NavLink to='/java' >
+                            Java
                           </NavLink>
                         </li>
                       </ul>
@@ -107,13 +107,13 @@ function Header() {
                           </NavLink>
                         </li>
                         <li className="px-5 py-2  hover:bg-teal-500 duration-300" onClick={() => { setdropDown(!dropDown) }}>
-                          <NavLink to='/javascript' >
-                            JavaScript
+                          <NavLink to='/python' >
+                            Python
                           </NavLink>
                         </li>
                         <li className="px-5 py-2  hover:bg-teal-500 duration-300" onClick={() => { setdropDown(!dropDown) }}>
-                          <NavLink to='/javascript' >
-                            JavaScript
+                          <NavLink to='/java' >
+                            Java
                           </NavLink>
                         </li>
                       </ul>

@@ -22,6 +22,7 @@ import JsIntroduction from './Components/Languages/JavaScript/JsIntroduction.jsx
 import JsHistory from './Components/Languages/JavaScript/JsHistory.jsx'
 import JavaScript from './Components/Languages/JavaScript/JavaScript.jsx'
 import JsWorking from './Components/Languages/JavaScript/JsWorking.jsx'
+import JsVariable from './Components/Languages/JavaScript/JsVariable.jsx'
 
 const router =createBrowserRouter(
   createRoutesFromElements(
@@ -45,6 +46,7 @@ const router =createBrowserRouter(
       <Route path='jsintroduction' element={<JsIntroduction/>}/>
       <Route path='jshistory' element={<JsHistory/>}/>
       <Route path='jsworking' element={<JsWorking/>}/>
+      <Route path='jsvariable' element={<JsVariable/>}/>
     </Route>
   )
 )
