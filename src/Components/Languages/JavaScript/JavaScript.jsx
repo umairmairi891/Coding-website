@@ -37,28 +37,28 @@ function JavaScript() {
                                 <NavLink to='/jsvariable'>
                                     <li className="py-3 px-4 hover:bg-gray-700 hover:text-white duration-300">Variables</li>
                                 </NavLink>
-                                <NavLink>
+                                <NavLink to='/jsdatatypes'>
                                     <li className="py-3 px-4 hover:bg-gray-700 hover:text-white duration-300">Data Types</li>
                                 </NavLink>
-                                <NavLink>
+                                <NavLink to='/jsfunction'>
                                     <li className="py-3 px-4 hover:bg-gray-700 hover:text-white duration-300">Functions</li>
                                 </NavLink>
-                                <NavLink>
+                                <NavLink to='/jsoperator'>
                                     <li className="py-3 px-4 hover:bg-gray-700 hover:text-white duration-300">Operators</li>
                                 </NavLink>
-                                <NavLink>
+                                <NavLink to='/jsloops'>
                                     <li className="py-3 px-4 hover:bg-gray-700 hover:text-white duration-300">Loops</li>
                                 </NavLink>
-                                <NavLink>
+                                <NavLink to='/jsobjects'>
                                     <li className="py-3 px-4 hover:bg-gray-700 hover:text-white duration-300">Objects</li>
                                 </NavLink>
-                                <NavLink>
+                                <NavLink to='/jsclasses'>
                                     <li className="py-3 px-4 hover:bg-gray-700 hover:text-white duration-300">Classes</li>
                                 </NavLink>
-                                <NavLink>
+                                <NavLink to='/jsdom'>
                                     <li className="py-3 px-4 hover:bg-gray-700 hover:text-white duration-300">DOM</li>
                                 </NavLink>
-                                <NavLink>
+                                <NavLink to='/jscomparison'>
                                     <li className="py-3 px-4 hover:bg-gray-700 hover:text-white duration-300">Comparison</li>
                                 </NavLink>
                             </ul>
@@ -80,20 +80,20 @@ function JavaScript() {
                     </div>
                 </div>
 
-                <div className="p-6 mt-4   bg-white-500 w-full" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }} >
+                <div className=" p-6 mt-4   bg-white-500 w-full" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }} >
                     <h2 className="text-2xl font-semibold border-l-5 border-blue-800 pl-5"> <span className="mr-3">🛠</span>Use Cases</h2>
-                    <div className="grid gap-10 grid-cols-1 sm:grid-cols-12 p-5">
+                    <div className="grid gap-10 grid-cols-1 sm:grid-cols-12 pt-3 md:pt-0">
                         <div className="bg-gray-400 p-3 col-span-4 rounded-xl h-auto text-center hover:scale-110 cursor-pointer duration-300">
                             <h2 className=" text-2xl font-bold font-[Roboto] py-2">Web Development</h2>
-                            <p className="font-thin">JavaScript used for web Development using HTML, CSS and Frameworks</p>
+                            <p className="font-[Itel] text-xl">JavaScript used for web Development using HTML, CSS and Frameworks</p>
                         </div>
                         <div className="bg-gray-400 p-3 col-span-4 rounded-xl h-auto text-center hover:scale-110 cursor-pointer duration-300">
                             <h2 className=" text-2xl font-bold font-[Roboto] py-2">Frontend Development</h2>
-                            <p className="font-thin">JavaScript used for Frontend Development using HTML, CSS and CSS Frameworks</p>
+                            <p className="font-[Itel] text-xl">JavaScript used for Frontend Development using HTML, CSS and CSS Frameworks</p>
                         </div>
                         <div className="bg-gray-400 p-3 col-span-4 rounded-xl h-auto text-center hover:scale-110 cursor-pointer duration-300">
                             <h2 className=" text-2xl font-bold font-[Roboto] py-2">Backend Development</h2>
-                            <p className="font-thin">JavaScript used for Backend Development using node.js, express.js and many other Frameworks</p>
+                            <p className="font-[Itel] text-xl">JavaScript used for Backend Development using node.js, express.js and many other Frameworks</p>
                         </div>
                     </div>
 
@@ -101,7 +101,7 @@ function JavaScript() {
                 <div className="p-6 mt-4   bg-white-500 w-full" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }} >
                     <h2 className="text-2xl font-[Roboto] font-semibold border-l-5 border-blue-800 pl-5"> <span className="mr-3">🔰</span>Key Features</h2>
 
-                    <ul className="mt-4 font-semibold py-3 font-[Popins]">
+                    <ul className="mt-4 text-xl font-semibold py-3 font-[Itel]">
                         <li className="py-1">Interpreted, high-level scripting language</li>
                         <li className="py-1">Supports object-oriented and functional programming</li>
                         <li className="py-1">Runs in browsers and on servers (via Node.js)</li>
@@ -113,7 +113,7 @@ function JavaScript() {
                 <div className="p-6 mt-4 bg-white w-full" style={{boxShadow:'0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)'}}>
                         <h2 className="border-l-5 text-2xl  border-blue-800 pl-5 font-bold font-[Roboto]"><span className="">📝</span>Learning Resources</h2>
                     
-                    <ul class="mt-4 font-semibold font-[Popins]">
+                    <ul class="mt-4 font-semibold font-[Popins] text-xl">
                         <Link to='"https://developer.mozilla.org/en-US/docs/Web/JavaScript"'>
                             <li>MDN JavaScript Docs</li>
                         </Link>

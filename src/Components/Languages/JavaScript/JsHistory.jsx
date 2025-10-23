@@ -7,7 +7,7 @@ function JsHistory(){
     const [isOpen, setisOpen] = useState(false);
     return(
     <>
-    <div className="p-10">
+    <div className="p-3 md:p-10">
         <div className="bg-gray-600 text-center py-5 px-3 text-white rounded" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1),0 1px 3px rgba(0,0,0,0.08)' }}>
                     <h2 className="font-bold text-xl font-[Itel] ">JavaScript History</h2>
                     <p className="py-2 font-thin">Welcome to the History of JavaScript programming languages</p>
@@ -36,28 +36,28 @@ function JsHistory(){
                                 <NavLink to='/jsvariable'>
                                     <li className="py-3 px-4 hover:bg-gray-700 hover:text-white duration-300">Variables</li>
                                 </NavLink>
-                                <NavLink>
+                                <NavLink to='/jsdatatypes'>
                                     <li className="py-3 px-4 hover:bg-gray-700 hover:text-white duration-300">Data Types</li>
                                 </NavLink>
-                                <NavLink>
+                                <NavLink to='/jsfunction'>
                                     <li className="py-3 px-4 hover:bg-gray-700 hover:text-white duration-300">Functions</li>
                                 </NavLink>
-                                <NavLink>
+                                <NavLink to='/jsoperator'>
                                     <li className="py-3 px-4 hover:bg-gray-700 hover:text-white duration-300">Operators</li>
                                 </NavLink>
-                                <NavLink>
+                                <NavLink to='/loops'>
                                     <li className="py-3 px-4 hover:bg-gray-700 hover:text-white duration-300">Loops</li>
                                 </NavLink>
-                                <NavLink>
+                                <NavLink to='/jsobjects'>
                                     <li className="py-3 px-4 hover:bg-gray-700 hover:text-white duration-300">Objects</li>
                                 </NavLink>
-                                <NavLink>
+                                <NavLink to='/jsclasses'>
                                     <li className="py-3 px-4 hover:bg-gray-700 hover:text-white duration-300">Classes</li>
                                 </NavLink>
-                                <NavLink>
+                                <NavLink to='/jsdom'>
                                     <li className="py-3 px-4 hover:bg-gray-700 hover:text-white duration-300">DOM</li>
                                 </NavLink>
-                                <NavLink>
+                                <NavLink to='/jscomparison'>
                                     <li className="py-3 px-4 hover:bg-gray-700 hover:text-white duration-300">Comparison</li>
                                 </NavLink>
                             </ul>

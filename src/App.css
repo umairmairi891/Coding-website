@@ -6,5 +6,8 @@
 .navbar{
    animation: fadeInLeft ;/* referring directly to the animation's @keyframe declaration */
   animation-duration: 0.4s ; /* don't forget to set a duration! */
-
+}
+.dropdown{
+  animation: fadeIn;
+  animation-duration: 0.4s;
 }

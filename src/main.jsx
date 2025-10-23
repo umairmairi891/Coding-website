@@ -8,7 +8,7 @@ import ContactUs from './Components/Footer/Contact.jsx'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider, Routes } from 'react-router-dom'
 import Syntax from './Components/Syntax.jsx'
 import PythonSyntax from './Components/Languages/PythonSyntax.jsx'
-import JsSyntax from './Components/Languages/JsSyntax.jsx'
+import JsSyntax from './Components/Languages/JavaScript/JsSyntax.jsx'
 import CplusplusSyntax from './Components/Languages/CplusplusSyntax.jsx'
 import Community from './Components/Footer/Community.jsx'
 import Career from './Components/Footer/Career.jsx'
@@ -23,6 +23,14 @@ import JsHistory from './Components/Languages/JavaScript/JsHistory.jsx'
 import JavaScript from './Components/Languages/JavaScript/JavaScript.jsx'
 import JsWorking from './Components/Languages/JavaScript/JsWorking.jsx'
 import JsVariable from './Components/Languages/JavaScript/JsVariable.jsx'
+import JsDataTypes from './Components/Languages/JavaScript/JsDataTypes.jsx'
+import JsFunction from './Components/Languages/JavaScript/JsFunction.jsx'
+import JsOperator from './Components/Languages/JavaScript/JsOperator.jsx'
+import JsLoops from './Components/Languages/JavaScript/JsLoops.jsx'
+import JsObjects from './Components/Languages/JavaScript/JsObjects.jsx'
+import JsClasses from './Components/Languages/JavaScript/JsClasses.jsx'
+import JsDOM from './Components/Languages/JavaScript/JsDOM.jsx'
+import JsComparison from './JsComparison.jsx'
 
 const router =createBrowserRouter(
   createRoutesFromElements(
@@ -47,6 +55,14 @@ const router =createBrowserRouter(
       <Route path='jshistory' element={<JsHistory/>}/>
       <Route path='jsworking' element={<JsWorking/>}/>
       <Route path='jsvariable' element={<JsVariable/>}/>
+      <Route path='jsdatatypes' element={<JsDataTypes/>}/>
+      <Route path='jsfunction' element={<JsFunction/>}/>
+      <Route path='jsoperator' element={<JsOperator/>}/>
+      <Route path='jsloops' element={<JsLoops/>}/>
+      <Route path='jsobjects' element={<JsObjects/>}/>
+      <Route path='jsclasses' element={<JsClasses/>}/>
+      <Route path='jsdom' element={<JsDOM/>}/>
+      <Route path='jscomparison' element={<JsComparison/>}/>
     </Route>
   )
 )

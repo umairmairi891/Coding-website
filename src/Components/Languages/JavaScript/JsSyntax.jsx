@@ -34,31 +34,31 @@ function JsSyntax(){
                         <NavLink to='/jssyntax'>
                             <li className="py-3 px-4 hover:bg-gray-700 hover:text-white duration-300">Syntax</li>
                         </NavLink>
-                        <NavLink>
+                        <NavLink to='/jsvariable'>
                             <li className="py-3 px-4 hover:bg-gray-700 hover:text-white duration-300">Variables</li>
                         </NavLink>
-                        <NavLink>
+                        <NavLink to='/jsdatatypes'>
                             <li className="py-3 px-4 hover:bg-gray-700 hover:text-white duration-300">Data Types</li>
                         </NavLink>
-                        <NavLink>
+                        <NavLink to='/jsfunction'>
                             <li className="py-3 px-4 hover:bg-gray-700 hover:text-white duration-300">Functions</li>
                         </NavLink>
-                        <NavLink>
+                        <NavLink to='/jsoperator'>
                             <li className="py-3 px-4 hover:bg-gray-700 hover:text-white duration-300">Operators</li>
                         </NavLink>
-                        <NavLink>
+                        <NavLink to='/jsloops'>
                             <li className="py-3 px-4 hover:bg-gray-700 hover:text-white duration-300">Loops</li>
                         </NavLink>
-                        <NavLink>
+                        <NavLink to='/jsobjects'>
                             <li className="py-3 px-4 hover:bg-gray-700 hover:text-white duration-300">Objects</li>
                         </NavLink>
-                        <NavLink>
+                        <NavLink to='/jsclasses'>
                             <li className="py-3 px-4 hover:bg-gray-700 hover:text-white duration-300">Classes</li>
                         </NavLink>
-                        <NavLink>
+                        <NavLink to='/jsdom'>
                             <li className="py-3 px-4 hover:bg-gray-700 hover:text-white duration-300">DOM</li>
                         </NavLink>
-                        <NavLink>
+                        <NavLink to='/jscomparison'>
                             <li className="py-3 px-4 hover:bg-gray-700 hover:text-white duration-300">Comparison</li>
                         </NavLink>
                      </ul>

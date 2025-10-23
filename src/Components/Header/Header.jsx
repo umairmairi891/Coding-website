@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+import '/src/App.css' 
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -48,7 +49,7 @@ function Header() {
                           </NavLink>
                         </li>
                         <li className="px-5 py-2  hover:bg-teal-500 duration-300" onClick={() => { setdropDown(!dropDown) }}>
-                          <NavLink to='/python' >
+                          <NavLink to='/pythonsyntax' >
                             Python
                           </NavLink>
                         </li>
@@ -73,9 +74,9 @@ function Header() {
         </div>
         
         {isOpen && (
-          <div className='md:hidden bg-sky-800 absolute w-full'>
+          <div className='md:hidden bg-sky-800 absolute w-full animate-animated dropdown'>
             <ul className='flex flex-col text-white space-y-3 p-5 font-[Roboto] text-lg'>
-              <li>
+              <li >
                 <NavLink to='/' onClick={() => setIsOpen(false)} className={({ isActive }) =>
                   `${isActive ? 'text-orange-600 font-bold' : "text-white"}`}>
                   Home
@@ -101,8 +102,8 @@ function Header() {
                   {dropDown && (
                     <div className=" absolute  ">
                       <ul className="bg-gray-300 rounded text-black">
-                        <li className="px-5 py-2 hover:bg-teal-500 duration-300 " onClick={() => { setdropDown(!dropDown) }}>
-                          <NavLink to='/javascript' >
+                        <li className="px-5 py-2 hover:bg-teal-500 duration-300 " onClick={() => { setdropDown(!dropDown)}} >
+                          <NavLink to='/javascript' onClick={()=>setIsOpen(!isOpen)}>
                             JavaScript
                           </NavLink>
                         </li>
