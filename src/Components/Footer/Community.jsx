@@ -3,8 +3,9 @@ import React from 'react'
 function Community() {
 
   return (
-    <div className=' mx-3 md:mx-10 py-8'>
-      <div className="w-full p-5 bg-white rounded" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
+    <div className="dark:bg-black dark:text-white">
+    <div className=' mx-3 md:mx-10 py-8 '>
+      <div className="w-full p-5  rounded dark:border-1 " style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
         <h2 className='border-l-5 border-blue-800 pl-5 text-2xl font-bold font-[Roboto]'>Community</h2>
         <p className="mt-5 font-serif text-lg">Welcome to the Community hub of   <strong> CodeCompanion.com</strong> a spece for programmers, learners, educators and contributors to Connect, collaborate and grow
           together</p>
@@ -13,7 +14,7 @@ function Community() {
           all about:</p>
       </div>
 
-      <div className="p-5 bg-white mt-4" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
+      <div className="p-5  mt-4 dark:border-1" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
 
         <h2 className='border-l-5 border-blue-800 pl-5 text-2xl font-bold font-[Roboto]'><span>📝</span>Forums & Discussion</h2>
         <p className="py-2 font-semibold font-[Popins] text-lg">Join conversation about:</p>
@@ -24,7 +25,7 @@ function Community() {
         </ul>
       </div>
 
-      <div className="p-5 mt-4 " style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
+      <div className="p-5 mt-4 dark:border-1 " style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
 
         <h2 className="border-l-5 border-blue-800 pl-5 font-bold font-[Roboto] text-2xl"><span class="m">🤝</span>Events & Meetups </h2>
         <p className="font-semibold font-[Popins] mt-2 text-lg">We regularly host:</p>
@@ -35,7 +36,7 @@ function Community() {
         </ul>
       </div>
 
-      <div className="p-5 mt-4" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
+      <div className="p-5 mt-4 dark:border-1" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
 
         <h2 className="border-l-5 border-blue-800 pl-5 text-2xl font-bold font-[Roboto]"> <span>💡</span>Contributor Program</h2>
         <p className="font-semibold mt-4 text-lg font-[Popins]">Want to give back to the Community</p>
@@ -46,7 +47,7 @@ function Community() {
         </ul>
       </div>
 
-      <div className="p-5 mt-4" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
+      <div className="p-5 mt-4 dark:border-1" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
         <h2 className="border-l-5 border-blue-800 pl-5 font-bold text-2xl font-[Roboto]"><span class="me-3">🗯</span>Student Network</h2>
         <p className="font-semibold text-lg py-2 font-[Popins]">A space for students and beginners to:</p>
         <ul class="font-thin text-lg">
@@ -56,6 +57,7 @@ function Community() {
         </ul>
       </div>
 
+    </div>
     </div>
   )
 }

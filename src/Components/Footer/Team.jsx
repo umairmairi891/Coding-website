@@ -3,9 +3,10 @@ import React from "react";
 function Team() {
 
     return (
-        <div className="py-5 mx-3 md:mx-10 ">
+        <div className="dark:bg-black dark:text-white">
+                    <div className="py-5 mx-3 md:mx-10 ">
             <div>
-                <div className="w-full p-5" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
+                <div className="w-full p-5 dark:border-1" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
                     <h2 className="border-l-5 border-blue-800 pl-5 font-bold text-2xl font-[Roboto]"><i className="fa fa-users "></i> Meet Our Team</h2>
 
                     <p class="font-serif text-lg mt-3"> At CodeCompanion.com, we are more then just developers and content
@@ -15,7 +16,7 @@ function Team() {
 
 
 
-                <div className="w-full p-5 mt-4" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
+                <div className="w-full p-5 mt-4 dark:border-1" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
                     <h2 className="border-l-5 border-blue-800 pl-5 font-bold text-2xl font-[Roboto]"><i className="fa fa-desktop mr-3"></i>Who We Are</h2>
 
                     <ol class=" mt-4 font-serif text-lg">
@@ -33,7 +34,7 @@ function Team() {
                     </ol>
                 </div>
 
-                <div className="w-full p-5 mt-4" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
+                <div className="w-full p-5 mt-4 dark:border-1" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
                     <h2 className="border-l-5 border-blue-800 pl-5 font-bold text-2xl font-[Roboto]"><i className="fa fa-star mr-3"></i>Our Mission</h2>
 
                     <p class=" mt-4 font-serif text-lg ">To empower learners, developers and educators by providing
@@ -42,7 +43,7 @@ function Team() {
                 </div>
 
 
-                <div className="w-full p-3 md:p-5 mt-4" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
+                <div className="w-full p-3 md:p-5 mt-4 dark:border-1" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
                     <h2 className="border-l-5 border-blue-800 pl-5 font-bold text-2xl font-[Roboto]">⚙   Our Roles</h2>
 
                     <div className="grid grid-cols-1 sm:grid-cols-12 gap-5 py-5 h-auto">
@@ -69,7 +70,7 @@ function Team() {
                 </div>
 
 
-                <div className="w-full p-5 mt-4" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
+                <div className="w-full p-5 mt-4 dark:border-1" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
                     <h2 className="border-l-5 border-blue-800 pl-5 font-bold text-2xl font-[Roboto]"><i className="fa fa-handshake mr-3"></i>A Collaborative Effort</h2>
 
                     <p class="font-serif text-lg mt-3">Weather we are writing syntax examples, building interface components, or
@@ -81,6 +82,8 @@ function Team() {
 
             </div>
         </div>
+        </div>
+
     )
 }
 

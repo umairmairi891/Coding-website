@@ -4,26 +4,27 @@ import Typed from 'typed.js';
 
 function About(){
     return(
-        <>
-        <div className='px-5 py-5 mt-3 mx-1 md:mx-10 '>
+        < >
+        <div className="dark:bg-black dark:text-white py-3">
+        <div className='px-5 py-5 mt-3 mx-1 md:mx-10   '>
             <div className='flex  flex-col justify-center items-center'>
                 <h2 className="text-2xl font-bold font-[Popins]">Who we are</h2>
                 <p className="block font-[Roboto] py-3 text-xl">Empowering developers through <TypedHeading/> </p>
             </div>
 
             <div className="grid grid-cols-1">
-                <div className='card w-full bg-white-400 p-3 rounded  ' style={{boxShadow:'0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)'}}>
+                <div className='card w-full bg-white-400 p-3 rounded  dark:border-1 dark:border-white' style={{boxShadow:'0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)'}}>
                     <h2 className='font-bold py-2 text-2xl border-l-6 pl-5 border-indigo-800'>Our Mission</h2>
                     <p className="px-5 font-thin text-xl">To make programming easy and accessable to everyone by providing a comprehensive hub for syntax, tutorials and examples</p>
                 </div>
 
-                <div className="bg-white-400 p-3 rounded mt-4" style={{boxShadow:'0px 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)'}}>
+                <div className="bg-white-400 p-3 rounded mt-4 dark:border-1 dark:border-white" style={{boxShadow:'0px 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)'}}>
                   <h2 className='font-bold py-2 text-2xl border-l-6 pl-5 border-indigo-800'>Our Vision</h2>
                   <p className="px-5 font-thin text-xl">Build a global community wheres coders, from students to professional, can explore, learn and contribute</p>
                 </div>
 
 
-                <div className="bg-white-400 p-3 rounded mt-4 " style={{boxShadow:'0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)'}}>
+                <div className="bg-white-400 p-3 rounded mt-4 dark:border-1 dark:border-white" style={{boxShadow:'0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)'}}>
                   <h2 className='font-bold py-2 text-2xl border-l-6 pl-5 border-indigo-800'>What we offer</h2>
                   <ul className='mt-3 font-thin text-xl'>
                     <li><span className='mr-5 '>✔</span>Clean syntax reference pages for 50+ languages</li>
@@ -33,13 +34,14 @@ function About(){
                   </ul>
                 </div>
 
-<div className="bg-white-400 p-3 rounded mt-4" style={{boxShadow:'0px 4px 6px rgba(0,0,0,0.1), 0px 1px 3px rgba(0,0,0,0.08)'}}>
+<div className="bg-white-400 p-3 rounded mt-4 dark:border-1 dark:border-white" style={{boxShadow:'0px 4px 6px rgba(0,0,0,0.1), 0px 1px 3px rgba(0,0,0,0.08)'}}>
                   <h2 className='font-bold py-2 text-2xl border-l-6 pl-5 border-indigo-800 '>Meet the Team</h2>
                   <p className="px-5 font-thin text-xl py-2">For question, feedback or collaboration</p>
                   <p className="px-5 font-thin text-xl py-2 overflow-auto">Contact@codecompanion.com</p>
                 </div>
 
             </div>
+        </div>
         </div>
         </>
     )

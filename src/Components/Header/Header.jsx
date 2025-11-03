@@ -1,11 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-
+import useBackground from "../Context/WebsiteContext";
 import '/src/App.css' 
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false)
-  const [dropDown, setdropDown] = useState(false)
+  const [dropDown, setdropDown] = useState(false);
+  const [backgroundButton, setBackgroundButton] = useState(false);
+ 
+
+const {ligthBackground,darkBackground}=useBackground()
+
+
+
+
+
   return (
     <>
       <nav className='bg-sky-800 w-full h-16'>
@@ -14,6 +23,17 @@ function Header() {
             <Link to='/'>
               <img className='w-25 h-12 mt-2' src="/Images/Gemini_Generated_Image_jtostqjtostqjtos-removebg-preview.png" alt="" />
             </Link>
+          </div>
+          <div className="cursor-pointer">
+            <button className="font-bold cursor-pointer font-[Lato] text-2xl text-white" onClick={()=>setBackgroundButton(!backgroundButton)}>Theme</button>
+            {
+              backgroundButton&&(
+                <div className="flex flex-col absolute bg-black text-white px-5 py-2 rounded text-xl font-[Itel]">
+                  <button className="cursor-pointer" onClick={()=>{darkBackground(); setBackgroundButton(!backgroundButton)}}>Dark</button>
+                  <button className="cursor-pointer" onClick={()=>{ligthBackground(); setBackgroundButton(!backgroundButton)} }>Light</button>
+                </div>
+              )
+            }
           </div>
           <div className='flex '>
             <ul className='md:flex hidden text-white space-x-10 mr-5 font-[Roboto] text-xl '>

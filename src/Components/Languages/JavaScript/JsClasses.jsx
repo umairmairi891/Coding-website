@@ -73,21 +73,21 @@ function JsClasses(){
 </div>
 <div className="mt-4" style={{boxShadow:'0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)'}}>
     <div className="p-5 w-full">
-  <h1>Key Concepts of JavaScript Classes:</h1>
-  <h2 className="">Declaration: Classes are declared using the class keyword.</h2>
+  <h1 className="text-2xl font-bold font-[Itel]">Key Concepts of JavaScript Classes:</h1>
+  <h2 className="text-xl font-bold font-[Lato] py-2">Declaration: Classes are declared using the class keyword.</h2>
   <div className="px-4 py-4 bg-black text-green-600 rounded">
         class MyClass {
       // Class body
     }
   </div>
-  <h2 className="">Constructor: The constructor() method is a special method within a class that is automatically called when a new instance of the class is created using the new keyword. It's used to initialize the object's properties. 
+  <h2 className="text-xl  font-[Itel] py-3"><strong>Constructor:</strong> The constructor() method is a special method within a class that is automatically called when a new instance of the class is created using the new keyword. It's used to initialize the object's properties. 
 </h2>
 
   <div className="px-4 py-4 bg-black text-green-600 rounded">
         class Person {
     }
   </div>
-  <h2 className="">Methods: Functions defined within a class are called methods. They define the behavior of objects created from the class.</h2>
+  <h2 className="text-xl font-[Itel] py-3"><strong>Methods:</strong> Functions defined within a class are called methods. They define the behavior of objects created from the class.</h2>
   
   <div className="px-4 py-4 bg-black text-green-600 rounded">
     class Person {
@@ -95,14 +95,14 @@ function JsClasses(){
     }
   </div>
 
-  <h2 className="">Instantiation: New objects (instances) are created from a class using the new keyword.</h2>
+  <h2 className="text-xl font-[Itel] py-3"><strong>Instantiation:</strong> New objects (instances) are created from a class using the new keyword.</h2>
   
   <div className="px-4 py-4 bg-black text-green-600 rounded">
         const person1 = new Person("Alice", 30);
     person1.greet(); // Output: Hello, my name is Alice and I am 30 years old.
   </div>
 
-  <h2 className="">Inheritance: Classes support inheritance using the extends keyword, allowing a child class to inherit properties and methods from a parent class. The super() keyword is used in the child class's constructor to call the parent class's constructor.</h2>
+  <h2 className="text-xl font-[Itel] py-3"><strong>Inheritance:</strong> Classes support inheritance using the extends keyword, allowing a child class to inherit properties and methods from a parent class. The super() keyword is used in the child class's constructor to call the parent class's constructor.</h2>
 
   
   <div className="px-4 py-4 bg-black text-green-600 rounded">
@@ -119,7 +119,7 @@ function JsClasses(){
     student1.study();
   </div>
 
-<h2 className="">Static Methods: Methods can be declared as static using the static keyword. Static methods belong to the class itself, not to instances of the class, and are called directly on the class.</h2>
+<h2 className="text-xl font-[Itel] py-3"><strong>Static Methods:</strong> Methods can be declared as static using the static keyword. Static methods belong to the class itself, not to instances of the class, and are called directly on the class.</h2>
 
 
   <div className="px-4 py-4 bg-black text-green-600 rounded">

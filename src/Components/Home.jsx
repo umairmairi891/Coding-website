@@ -7,8 +7,8 @@ function Home() {
   
     
     return (
-        <>
-            <div className=" px-3 sm:px-10 py-10">
+        < >
+            <div className=" px-3 sm:px-10 py-10 dark:bg-black dark:text-white">
                 <div className="grid grid-cols-1 sm:grid-cols-12 justify-center">
                     <div className='sm:col-span-6 '>
                         <h2 className='text-2xl font-bold font-[Popins]'>Explore Every Programming Languages in one Place</h2>
@@ -22,20 +22,20 @@ function Home() {
                 </div>
 
               <div className='grid grid-cols-1 sm:grid-cols-12 w-[100%] sm:w-full  mt-5 '>
-                    <div className='bg-gray-600 p-3 w-[100%] sm:col-span-3 max-h-[510px]  md:max-h-[280px] lg:max-h-[350px] xl:max-h-[510px] overflow-auto text-xl text-white font-[Roboto] rounded'>
+                    <div className='bg-gray-600 dark:bg-black  p-3 w-[100%] sm:col-span-3 max-h-[510px]  md:max-h-[280px] lg:max-h-[350px] xl:max-h-[510px] overflow-auto text-xl text-white font-[Roboto] rounded'>
                         <h2 className='font-bold px-2'>Languages</h2>
                         <input className='bg-white text-black rounded w-full px-3 py-2 mt-2 md:text-base'  type="text" placeholder='Search Langauges' />
                         <h3 className='text-center mt-4 md:mt-1 lg:mt-4 font-semibold md:text-base hover:bg-blue-600 cursor-pointer rounded py-2 md:py-0 lg:py-2'>Papular Languages</h3>
                         <ul className='grid gap-4 cursor-pointer'>
-                            <li className='hover:bg-blue-600 px-3 rounded py-2'>JavaScript</li>
-                            <li className='hover:bg-blue-600 px-3 rounded py-2'>Java</li>
-                            <li className='hover:bg-blue-600 px-3 rounded py-2'>C++</li>
-                            <li className='hover:bg-blue-600 px-3 rounded py-2'>HTML</li>
-                            <li className='hover:bg-blue-600 px-3 rounded py-2'>CSS</li>
-                            <li className='hover:bg-blue-600 px-3 rounded py-2'>Python</li>
-                            <li className='hover:bg-blue-600 px-3 rounded py-2'>Ruby</li>
-                            <li className='hover:bg-blue-600 px-3 rounded py-2'>SQL</li>
-                            <li className='hover:bg-blue-600 px-3 rounded py-2'>Golang</li>
+                            <li className='hover:bg-blue-600 dark:bg-black px-3 rounded py-2'>JavaScript</li>
+                            <li className='hover:bg-blue-600  dark:bg-black  px-3 rounded py-2'>Java</li>
+                            <li className='hover:bg-blue-600 dark:bg-black  px-3 rounded py-2'>C++</li>
+                            <li className='hover:bg-blue-600  dark:bg-black px-3 rounded py-2'>HTML</li>
+                            <li className='hover:bg-blue-600  dark:bg-black px-3 rounded py-2'>CSS</li>
+                            <li className='hover:bg-blue-600  dark:bg-black px-3 rounded py-2'>Python</li>
+                            <li className='hover:bg-blue-600  dark:bg-black px-3 rounded py-2'>Ruby</li>
+                            <li className='hover:bg-blue-600  dark:bg-black px-3 rounded py-2'>SQL</li>
+                            <li className='hover:bg-blue-600  dark:bg-black px-3 rounded py-2'>Golang</li>
                         </ul>
                     </div>
                     <div className='sm:col-span-8 ml-1 sm:ml-10'>

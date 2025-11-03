@@ -3,12 +3,12 @@ import { NavLink } from "react-router-dom";
 function Syntax() {
     return (
         <>
-            <div className="w-full p-10">
+            <div className="w-full p-10 dark:bg-black dark:text-white">
                 <div className=" ">
                     <ul className="grid gap-5 grid-cols-1 sm:grid-cols-12">
                         <NavLink to='/pythonsyntax' className='col-span-12 sm:col-span-2 md:col-span-4'>
 
-                            <li className="font-bold  transform transition-transform duration-300 hover:scale-105 font-[Roboto]   w-full text-center bg-gray-400  rounded shadow-xl cursor-pointer p-5">
+                            <li className="font-bold   transform transition-transform duration-300 hover:scale-105 font-[Roboto]   w-full text-center bg-gray-400  rounded shadow-xl cursor-pointer p-5">
                                 <h2 className="text-xl">Python Syntax</h2>
                                 <p className="font-thin mt-3">A language for backend development</p>
                             </li>

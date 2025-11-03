@@ -3,9 +3,9 @@ import React from 'react'
 function Documentation() {
 
     return (
-        <div>
+        <div className='dark:bg-black dark:text-white'>
             <div className='py-5 mx-3 md:mx-10 '>
-                <div className='p-5 w-full' style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
+                <div className='p-5 w-full dark:border-1' style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
                     <h1 className="border-l-5 border-blue-800 pl-5 font-bold text-3xl font-[Roboto] text-center">📚 Documentation</h1>
 
                     <h2 className="font-semibold font-[Popins] text-xl py-2 text-center">Welcome to the CodeCompanion.com Documentation</h2>
@@ -21,7 +21,7 @@ function Documentation() {
                 </div>
 
 
-                <div className='p-5 w-full mt-4' style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
+                <div className='p-5 w-full mt-4 dark:border-1' style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
 
                     <h2 className="border-l-5 border-blue-800 pl-5 font-bold text-3xl font-[Roboto]">🧭 Table of Contents</h2>
                     <ul className="mt-4 font-semibold font-[Popins] text-lg">
@@ -34,7 +34,7 @@ function Documentation() {
                 </div>
 
 
-                <div className='p-5 w-full mt-4' style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
+                <div className='p-5 w-full mt-4 dark:border-1' style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
                     <h2 className="border-l-5 border-blue-800 pl-5 font-bold text-3xl font-[Roboto]">🔰 1. Getting Started</h2>
                     <p className="font-semibold text-xl py-2">To begin using our platform:</p>
                     <ul className="font-serif text-lg py-2">
@@ -53,7 +53,7 @@ function Documentation() {
                 </div>
 
 
-                <div className='p-5 w-full mt-4' style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
+                <div className='p-5 w-full mt-4 dark:border-1' style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
                     <h2 className="border-l-5 border-blue-800 pl-5 font-bold text-3xl font-[Roboto]">🗂️ 2. Site Structure</h2>
                     <p class="font-semibold font-[Popins] text-xl py-2">Our website is organized into the following main sections:</p>
                     <ul class="font-serif text-lg">
@@ -68,7 +68,7 @@ function Documentation() {
 
 
 
-                <div className='p-5 w-full mt-4' style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
+                <div className='p-5 w-full mt-4 dark:border-1' style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
                     <h2 className="border-l-5 border-blue-800 pl-5 font-bold text-3xl font-[Roboto]">💡 3. How to Use Language Pages</h2>
                     <p className="font-semibold font-[Popins] py-2 text-xl">Each language page provides:</p>
                     <ul className="font-serif text-lg">
@@ -80,7 +80,7 @@ function Documentation() {
                 </div>
 
 
-                <div className='p-5 w-full mt-4' style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
+                <div className='p-5 w-full mt-4 dark:border-1' style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
 
                     <h2 className="border-l-5 border-blue-800 pl-5 font-bold text-3xl font-[Roboto]">🧑‍💻 4. Code Examples & Syntax Highlighting</h2>
                     <p className="font-semibold font-[Popins] text-xl py-2">We provide  code snippets with:</p>
@@ -92,7 +92,7 @@ function Documentation() {
                     </ul>
                 </div>
 
-                <div className='p-5 w-full mt-4' style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
+                <div className='p-5 w-full mt-4 dark:border-1' style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
                     <h2 className='border-l-5 border-blue-800 pl-5 font-bold text-3xl font-[Roboto]'>🤝 5. User Contributions</h2>
                     <p className="font-semibold text-xl py-2 font-[Popins]">You can contribute to the platform by:</p>
                     <ul className="font-serif text-lg">

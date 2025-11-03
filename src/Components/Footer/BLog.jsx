@@ -3,9 +3,9 @@ import React from "react";
 function Blog() {
 
     return (
-        <div>
+        <div className="dark:bg-black dark:text-white">
             <div className="py-5 mx-3 md:mx-10">
-                <div className="p-5 w-full" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08) ' }}>
+                <div className="p-5 w-full dark:border-1" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08) ' }}>
                     <h1 className="text-center font-bold text-3xl font-[Roboto]">Explore the world of Code</h1>
                     <h1 className="text-center font-[Itel] font-semibold text-xl py-2">One post at a Time</h1>
                     <p className="font-serif text-lg md:text-center">
@@ -18,7 +18,7 @@ function Blog() {
                 </div>
 
 
-                <div className="p-5 w-full mt-4" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08) ' }}>
+                <div className="p-5 w-full mt-4 dark:border-1" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08) ' }}>
 
                     <h2 className="border-l-5 border-blue-800 pl-5 font-bold text-2xl font-[Roboto]">🔎What You Will Find Here</h2>
 
@@ -39,7 +39,7 @@ function Blog() {
                 </div>
 
 
-                <div className="p-5 w-full mt-4" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08) ' }}>
+                <div className="p-5 w-full mt-4 dark:border-1" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08) ' }}>
 
                     <h2 className="border-l-5 border-blue-800 pl-5 font-bold text-2xl font-[Roboto]">🌐 Featured Posts</h2>
 
@@ -83,7 +83,7 @@ function Blog() {
                 </div>
 
 
-                <div className="p-5 w-full mt-4" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08) ' }}>
+                <div className="p-5 w-full mt-4 dark:border-1" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08) ' }}>
                     
                     <h2 className="border-l-5 border-blue-800 pl-5 font-bold text-2xl font-[Roboto]"><span class="me-3">✍️</span>Want to Write for Us?</h2>
 
@@ -97,7 +97,7 @@ function Blog() {
                 </div>
 
 
-                <div className="p-5 w-full mt-4" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08) ' }}>
+                <div className="p-5 w-full mt-4 dark:border-1" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08) ' }}>
                     <h2 className="border-l-5 border-blue-800 pl-5 font-bold text-2xl font-[Roboto]"><span>📃</span> Learn. Share. Grow.</h2>
 
                     <p className="py-2 font-serif text-lg">

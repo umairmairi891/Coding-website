@@ -65,49 +65,49 @@ function JsComparison() {
                     )
                 }
 
-                <div className="mt-4" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
+                <div className="mt-4 rounded" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }}>
                     <div className="p-5 w-full">
                       <table className="responsive w-full">
                         <tr className="text-xl font-bold font-[Itel] border-4 border-l-4 border-black">
-                            <th>Functions</th>
-                         <th className="px-4 ">JavaScript</th>
-                         <th className="px-4">Other Languages</th>
+                            <th className="px-4 py-2 font-[Itel] border-r-4 border-black">Functions</th>
+                         <th className="px-4 py-2 font-[Itel] border-r-4 border-black">JavaScript</th>
+                         <th className="px-4 py-2 font-[Itel] border-r-4 border-black">Other Languages</th>
                          </tr>
-                         <tbody>
-                            <tr>
-                                <td className="px-4"> 1. Ease of Learning and Use</td>
-                                <td>JavaScript: Known for its simplicity and flexibility, JavaScript is often recommended for beginners. Its syntax is user-friendly, and since it’s interpreted, it allows for rapid testing and feedback.</td>
-                                <td>Other Languages: Languages like Python also offer ease of learning, while others like C++ or Java might have a steeper learning curve due to more complex syntax and the need for understanding low-level programming concepts.</td>
+                         <tbody className="font-[Itel] text-lg">
+                            <tr className="">
+                                <td className="px-1 font-bold py-2"> Ease of Learning and Use</td>
+                                <td className="px-4 ">JavaScript: Known for its simplicity and flexibility, JavaScript is often recommended for beginners. Its syntax is user-friendly, and since it’s interpreted, it allows for rapid testing and feedback.</td>
+                                <td className="px-4 ">Other Languages: Languages like Python also offer ease of learning, while others like C++ or Java might have a steeper learning curve due to more complex syntax and the need for understanding low-level programming concepts.</td>
                             </tr>
 
                             <tr>
-                                <td>2. Performance and Speed</td>
-                                <td>JavaScript: It’s fast for web-based applications, especially with modern JavaScript engines like V8 (used in Chrome). However, for computation-heavy tasks, it may not be as efficient as compiled languages.</td>
-                                <td>Other Languages: Languages like C, C++, and Rust offer higher performance for CPU-intensive tasks. Java, with its Just-In-Time (JIT) compiler, strikes a balance between performance and ease of use.</td>
+                                <td className="px-1 py-2 font-bold">Performance and Speed</td>
+                                <td className="px-4 py-2">JavaScript: It’s fast for web-based applications, especially with modern JavaScript engines like V8 (used in Chrome). However, for computation-heavy tasks, it may not be as efficient as compiled languages.</td>
+                                <td className="px-4 py-2">Other Languages: Languages like C, C++, and Rust offer higher performance for CPU-intensive tasks. Java, with its Just-In-Time (JIT) compiler, strikes a balance between performance and ease of use.</td>
                             </tr>
 
                             <tr>
-                                <td>3. Versatility and Use Cases</td>
-                                <td>JavaScript: Exceptionally versatile, it’s used for front-end and back-end development (thanks to Node.js), mobile apps (React Native), and even desktop applications (Electron).</td>
-                                <td>Other Languages: Python is renowned for its use in data science, AI, and machine learning. Java is a staple for enterprise-level backend services, and Swift/Objective-C are primarily used for iOS app development.</td>
+                                <td className="px-4 py-2 font-bold">Versatility and Use Cases</td>
+                                <td className="px-4 py-2">JavaScript: Exceptionally versatile, it’s used for front-end and back-end development (thanks to Node.js), mobile apps (React Native), and even desktop applications (Electron).</td>
+                                <td className="px-4 py-2">Other Languages: Python is renowned for its use in data science, AI, and machine learning. Java is a staple for enterprise-level backend services, and Swift/Objective-C are primarily used for iOS app development.</td>
                             </tr>
 
                             <tr>
-                                <td>4. Community and Ecosystem</td>
-                                <td>JavaScript: Boasts a massive, active community. The NPM (Node Package Manager) repository is one of the largest software registries in the world.</td>
-                                <td>Other Languages: Python has a strong community, especially in scientific computing. Java also has a vast ecosystem, particularly in corporate environments.</td>
+                                <td className="px-4 py-2 font-bold">Community and Ecosystem</td>
+                                <td className="px-4 py-2">JavaScript: Boasts a massive, active community. The NPM (Node Package Manager) repository is one of the largest software registries in the world.</td>
+                                <td className="px-4 py-2">Other Languages: Python has a strong community, especially in scientific computing. Java also has a vast ecosystem, particularly in corporate environments.</td>
                             </tr>
 
                             <tr>
-                                <td>5. Frameworks and Libraries</td>
-                                <td>JavaScript: Rich in frameworks and libraries like React, Angular, and Vue.js for front-end development, and Express.js for the back-end.</td>
-                                <td>Other Languages: Python has Django and Flask, while Java has Spring and Hibernate. Each language has its own set of tools, catering to different project needs.</td>
+                                <td className="px-4 py-2 font-bold">Frameworks and Libraries</td>
+                                <td className="px-4 py-2">JavaScript: Rich in frameworks and libraries like React, Angular, and Vue.js for front-end development, and Express.js for the back-end.</td>
+                                <td className="px-4 py-2">Other Languages: Python has Django and Flask, while Java has Spring and Hibernate. Each language has its own set of tools, catering to different project needs.</td>
                             </tr>
 
                             <tr>
-                                <td>6. Career Opportunities</td>
-                                <td>JavaScript: High demand in web development, both front-end and back-end (Node.js).</td>
-                                <td>Other Languages: Python and Java also offer extensive career opportunities in various fields like web development, data science, and enterprise applications.</td>
+                                <td className="px-4 py-2 font-bold">Career Opportunities</td>
+                                <td className="px-4 py-2">JavaScript: High demand in web development, both front-end and back-end (Node.js).</td>
+                                <td className="px-4 py-2">Other Languages: Python and Java also offer extensive career opportunities in various fields like web development, data science, and enterprise applications.</td>
                             </tr>
                          </tbody>
                       </table>

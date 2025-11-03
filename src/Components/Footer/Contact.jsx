@@ -4,6 +4,7 @@ function ContactUs(){
       
     return(
         <>
+        <div className="dark:bg-black ">
         <div className="flex justify-center items-center h-[100vh] md:h-[80vh] flex-row" >
             <div className="bg-gray-500 p-7 rounded max-w-[300px] md:max-w-[600px] " style={{boxShadow:"0 4px 6px rgba()0,0,0,0.1), 0 4px 6px rgba(0,0,0,0.08)"}} >
                     <h2 className="text-center text-2xl font-bold">Get in Touch</h2>
@@ -35,6 +36,7 @@ function ContactUs(){
                 </div>
             </div>
             </div>
+        </div>
         </div>
         </>
     )
