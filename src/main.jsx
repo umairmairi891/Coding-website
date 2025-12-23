@@ -7,7 +7,7 @@ import About from './Components/About.jsx'
 import ContactUs from './Components/Footer/Contact.jsx'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider, Routes } from 'react-router-dom'
 import Syntax from './Components/Syntax.jsx'
-import PythonSyntax from './Components/Languages/PythonSyntax.jsx'
+import PythonSyntax from './Components/Languages/Python/PythonSyntax.jsx'
 import JsSyntax from './Components/Languages/JavaScript/JsSyntax.jsx'
 import CplusplusSyntax from './Components/Languages/CplusplusSyntax.jsx'
 import Community from './Components/Footer/Community.jsx'
@@ -30,7 +30,13 @@ import JsLoops from './Components/Languages/JavaScript/JsLoops.jsx'
 import JsObjects from './Components/Languages/JavaScript/JsObjects.jsx'
 import JsClasses from './Components/Languages/JavaScript/JsClasses.jsx'
 import JsDOM from './Components/Languages/JavaScript/JsDOM.jsx'
-import JsComparison from './JsComparison.jsx'
+import JsComparison from './Components/Languages/JavaScript/JsComparison.jsx'
+import Python from './Components/Languages/Python/Python.jsx'
+import PyIntroduction from './Components/Languages/Python/PyIntroduction.jsx'
+import PyHistory from './Components/Languages/Python/PyHistory.jsx'
+import PyWorking from './Components/Languages/Python/PyWorking.jsx'
+import PyVariable from './Components/Languages/Python/PyVariables.jsx'
+import PyDataTypes from './Components/Languages/Python/PyDataTypes.jsx'
 
 const router =createBrowserRouter(
   createRoutesFromElements(
@@ -47,7 +53,7 @@ const router =createBrowserRouter(
       <Route path='support' element={<Support/>} />
       <Route path='privacy' element={<Privacy/>} />
       <Route path='syntax' element={<Syntax/>}/>
-      <Route path='pythonsyntax' element={<PythonSyntax/>}/>
+      <Route path='pysyntax' element={<PythonSyntax/>}/>
       <Route path='jssyntax' element={<JsSyntax/>}/>
       <Route path='cplusplussyntax' element={<CplusplusSyntax/>}/>
       <Route path='javascript' element={<JavaScript/>}/>
@@ -63,6 +69,12 @@ const router =createBrowserRouter(
       <Route path='jsclasses' element={<JsClasses/>}/>
       <Route path='jsdom' element={<JsDOM/>}/>
       <Route path='jscomparison' element={<JsComparison/>}/>
+      <Route path='python' element={<Python/>}/>
+      <Route path='pyintroduction' element={<PyIntroduction/>}/>
+      <Route path='pyhistory' element={<PyHistory/>}/>
+      <Route path='pyworking' element={<PyWorking/>}/>
+      <Route path='pyvariable' element={<PyVariable/>}/>
+      <Route path='pydatatypes' element={<PyDataTypes/>}/>
     </Route>
   )
 )

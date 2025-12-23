@@ -4,7 +4,25 @@ import Typed from 'typed.js';
 
 
 function Home() {
+
+  const [language, setLanguage]=useState('javascript');
+  const [type, setType]=useState('overview');
+
+  const handleLanguage=(lang)=>{
+   const newlang=lang.toLowerCase();
+   setLanguage(newlang)
+  }
+
+  const handleType=(type)=>{
+  const newType=type.toLowerCase();
+  setType(newType)
+  }
   
+  const getImagePath = (type) => {
+  if (!language) return "";
+  return `/Images/${language}-${type}.png`;
+};
+
     
     return (
         < >
@@ -21,33 +39,38 @@ function Home() {
                     </div>
                 </div>
 
-              <div className='grid grid-cols-1 sm:grid-cols-12 w-[100%] sm:w-full  mt-5 '>
-                    <div className='bg-gray-600 dark:bg-black  p-3 w-[100%] sm:col-span-3 max-h-[510px]  md:max-h-[280px] lg:max-h-[350px] xl:max-h-[510px] overflow-auto text-xl text-white font-[Roboto] rounded'>
+              <div className='grid grid-cols-1 sm:grid-cols-12 w-full sm:w-full  mt-5 '>
+                    <div className='bg-gray-600 dark:bg-black  p-3 w-full sm:col-span-3 max-h-[510px]  md:max-h-[280px] lg:max-h-[350px] xl:max-h-[510px] overflow-auto text-xl text-white font-[Roboto] rounded'>
                         <h2 className='font-bold px-2'>Languages</h2>
                         <input className='bg-white text-black rounded w-full px-3 py-2 mt-2 md:text-base'  type="text" placeholder='Search Langauges' />
                         <h3 className='text-center mt-4 md:mt-1 lg:mt-4 font-semibold md:text-base hover:bg-blue-600 cursor-pointer rounded py-2 md:py-0 lg:py-2'>Papular Languages</h3>
                         <ul className='grid gap-4 cursor-pointer'>
-                            <li className='hover:bg-blue-600 dark:bg-black px-3 rounded py-2'>JavaScript</li>
-                            <li className='hover:bg-blue-600  dark:bg-black  px-3 rounded py-2'>Java</li>
-                            <li className='hover:bg-blue-600 dark:bg-black  px-3 rounded py-2'>C++</li>
-                            <li className='hover:bg-blue-600  dark:bg-black px-3 rounded py-2'>HTML</li>
-                            <li className='hover:bg-blue-600  dark:bg-black px-3 rounded py-2'>CSS</li>
-                            <li className='hover:bg-blue-600  dark:bg-black px-3 rounded py-2'>Python</li>
-                            <li className='hover:bg-blue-600  dark:bg-black px-3 rounded py-2'>Ruby</li>
-                            <li className='hover:bg-blue-600  dark:bg-black px-3 rounded py-2'>SQL</li>
-                            <li className='hover:bg-blue-600  dark:bg-black px-3 rounded py-2'>Golang</li>
+                            <li onClick={()=>handleLanguage('javascript')} className='hover:bg-blue-600 dark:bg-black px-3 rounded py-2'>JavaScript</li>
+                            <li onClick={()=>handleLanguage('java')} className='hover:bg-blue-600  dark:bg-black  px-3 rounded py-2'>Java</li>
+                            <li onClick={()=>handleLanguage('cpp')} className='hover:bg-blue-600 dark:bg-black  px-3 rounded py-2'>C++</li>
+                            <li onClick={()=>handleLanguage('html')} className='hover:bg-blue-600  dark:bg-black px-3 rounded py-2'>HTML</li>
+                            <li onClick={()=>handleLanguage('css')} className='hover:bg-blue-600  dark:bg-black px-3 rounded py-2'>CSS</li>
+                            <li onClick={()=>handleLanguage('python')} className='hover:bg-blue-600  dark:bg-black px-3 rounded py-2'>Python</li>
+                            <li onClick={()=>handleLanguage('ruby')} className='hover:bg-blue-600  dark:bg-black px-3 rounded py-2'>Ruby</li>
+                            <li onClick={()=>handleLanguage('sql')} className='hover:bg-blue-600  dark:bg-black px-3 rounded py-2'>SQL</li>
+                            <li onClick={()=>handleLanguage('golang')} className='hover:bg-blue-600  dark:bg-black px-3 rounded py-2'>Golang</li>
                         </ul>
                     </div>
                     <div className='sm:col-span-8 ml-1 sm:ml-10'>
                         <div className='flex gap-3 sm:gap-10 px-1 sm:px-4 text-sm sm:text-xl'>
-                            <button className='cursor-pointer font-semibold bg-indigo-700 py-2 mt-2 px-3 rounded text-white hover:bg-indigo-950 duration-200'>OverView</button>
-                            <button className='cursor-pointer font-semibold bg-indigo-700 py-2 mt-2 px-3 rounded text-white hover:bg-indigo-950 duration-200'>Syntax</button>
-                            <button className='cursor-pointer font-semibold bg-indigo-700 py-2 mt-2 px-3 rounded text-white hover:bg-indigo-950 duration-200'>Examples</button>
+                            <button onClick={()=>handleType('overview')} className='cursor-pointer font-semibold bg-indigo-700 py-2 mt-2 px-3 rounded text-white hover:bg-indigo-950 duration-200'>OverView</button>
+                            <button onClick={()=>handleType('syntax')} className='cursor-pointer font-semibold bg-indigo-700 py-2 mt-2 px-3 rounded text-white hover:bg-indigo-950 duration-200'>Syntax</button>
+                            <button onClick={()=>handleType('examples')} className='cursor-pointer font-semibold bg-indigo-700 py-2 mt-2 px-3 rounded text-white hover:bg-indigo-950 duration-200'>Examples</button>
                         </div>
                         <hr className='mt-4' />
                         <div className="img">
-                          <img className='mt-3 rounded' src="/Images/java-overview.png" alt="" />
-                        </div>
+  <img
+    className="mt-3 rounded"
+    src={getImagePath(type)}
+    alt=""
+  />
+</div>
+
                     </div>
                 </div>
             </div>

@@ -17,7 +17,7 @@ function JsVariable() {
 
                 {
                     isOpen && (
-                        <div className="bg-cyan-900 h-auto navbar animate-animated  text-white rounded w-[100%] sm:sw-[30%] md:w-[30%] lg:w-[20%] absolute top-16 left-0 md:left-0">
+                        <div className="bg-cyan-900 h-auto navbar animate-animated  text-white rounded w-full sm:sw-[30%] md:w-[30%] lg:w-[20%] absolute top-16 left-0 md:left-0">
                             <ul className=" text-lg font-[Roboto]">
                                 <div className="flex justify-between items-center">
                                     <NavLink className='w-[80%]  hover:bg-gray-700  duration-300' to='/jsintroduction'>
@@ -83,7 +83,7 @@ function JsVariable() {
                         <p className="text-lg py-2">
                             <span className="text-xl font-bold">var</span> This is the older keyword for declaring variables. Variables declared with var are function-scoped or globally scoped if declared outside a function. They can be redeclared and updated.
                         </p>
-                        <div className="w-[100%] md:w-[100%] h-auto bg-black text-green-600 mt-1 py-4 px-4 rounded">
+                        <div className="w-full md:w-full h-auto bg-black text-green-600 mt-1 py-4 px-4 rounded">
                             <p className="">
                                 var x = 10;
                             </p>
@@ -99,7 +99,7 @@ function JsVariable() {
                             <span className="text-xl font-bold">Let</span>  Introduced in ES6, let is preferred for declaring variables whose values might change. Variables declared with let are block-scoped (scoped within curly braces {}). They can be updated but not redeclared within the same scope.
                         </p>
                         
-                        <div className="w-[100%] md:w-[100%] h-auto bg-black text-green-600 mt-1 py-4 px-4 rounded">
+                        <div className="w-full md:w-full h-auto bg-black text-green-600 mt-1 py-4 px-4 rounded">
                             <p className="">
                                 let x = 10;
                             </p>
@@ -114,7 +114,7 @@ function JsVariable() {
                         <p className="text-lg py-2">
                             <span className="text-lg font-bold">const</span> Also introduced in ES6, const is used to declare constant variables, meaning their values cannot be reassigned after initialization. Like let, const variables are block-scoped. They must be initialized at the time of declaration.
                         </p>
-                        <div className="w-[100%] md:w-[100%] h-auto bg-black text-green-600 mt-1 py-4 px-4 rounded">
+                        <div className="w-full md:w-full h-auto bg-black text-green-600 mt-1 py-4 px-4 rounded">
                             <p className="">
                                 const y = 10;
                             </p>

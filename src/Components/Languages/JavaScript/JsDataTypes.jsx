@@ -16,7 +16,7 @@ function JsDataTypes() {
 
                 {
                     isOpen && (
-                        <div className="bg-cyan-900 h-auto navbar animate-animated  text-white rounded w-[100%] sm:sw-[30%] md:w-[30%] lg:w-[20%] absolute top-16 left-0 md:left-0">
+                        <div className="bg-cyan-900 h-auto navbar animate-animated  text-white rounded w-full sm:sw-[30%] md:w-[30%] lg:w-[20%] absolute top-16 left-0 md:left-0">
                             <ul className=" text-lg font-[Roboto]">
                                 <div className="flex justify-between items-center">
                                     <NavLink className='w-[80%]  hover:bg-gray-700  duration-300' to='/jsintroduction'>
@@ -72,28 +72,28 @@ function JsDataTypes() {
                         <h3 className="font-bold text-2xl font-[Lato]">Primitive Data Types: These represent single immutable value</h3>
                         <p className="py-2 font-[Itel] text-xl"><strong>Number:</strong> Represents both integers and floating point numbers</p>
 
-                        <div className="w-[100%] md:w-[100%] h-auto bg-black text-green-600 mt-1 py-4 px-4 rounded">
+                        <div className="w-full md:w-full h-auto bg-black text-green-600 mt-1 py-4 px-4 rounded">
                             let age=30;
                             let price=19.90
                         </div>
                         <p className="py-2 font-[Itel] text-xl"><strong>String:</strong>Represents sequence of characters, enclosed in single quotes or backticks.</p>
-                        <div className="w-[100%] md:w-[100%] h-auto bg-black text-green-600 mt-1 py-4 px-4 rounded">
+                        <div className="w-full md:w-full h-auto bg-black text-green-600 mt-1 py-4 px-4 rounded">
                             let name='Alice';
                             let greeting=`Hello World`
                         </div>
                         <p className="py-2 font-[Itel] text-xl"><strong>Boolean:</strong>Represents a logical entity and can have only two values: true or false</p>
                         
-                        <div className="w-[100%] md:w-[100%] h-auto bg-black text-green-600 mt-1 py-4 px-4 rounded">
+                        <div className="w-full md:w-full h-auto bg-black text-green-600 mt-1 py-4 px-4 rounded">
                             let isActive=true;
                             let hasPermission=false;
                         </div>
                         <p className="py-2 font-[Itel] text-xl"><strong>Undefined:</strong> Represents a variable that has been declared but not yet assigned a value.</p>
-                        <div className="w-[100%] h-auto bg-black text-green-600 mt-1 py-4 px-4 rounded">
+                        <div className="w-full h-auto bg-black text-green-600 mt-1 py-4 px-4 rounded">
                             let myVariable; // myVariable is undefined
                         </div>
                         <p className="py-2 font-[Itel] text-xl"><strong>Null:</strong> Represents the intentional absense of any object value. It is a primitive value</p>
                        
-                        <div className="w-[100%] h-auto bg-black text-green-600 mt-1 py-4 px-4 rounded">
+                        <div className="w-full h-auto bg-black text-green-600 mt-1 py-4 px-4 rounded">
                             let emptyValue=null;
                         </div>
                     </div>

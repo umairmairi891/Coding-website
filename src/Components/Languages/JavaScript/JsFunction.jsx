@@ -16,7 +16,7 @@ function JsFunction(){
 
                 {
                     isOpen && (
-                        <div className="bg-cyan-900 h-auto navbar animate-animated  text-white rounded w-[100%] sm:sw-[30%] md:w-[30%] lg:w-[20%] absolute top-16 left-0 md:left-0">
+                        <div className="bg-cyan-900 h-auto navbar animate-animated  text-white rounded w-full sm:sw-[30%] md:w-[30%] lg:w-[20%] absolute top-16 left-0 md:left-0">
                             <ul className=" text-lg font-[Roboto]">
                                 <div className="flex justify-between items-center">
                                     <NavLink className='w-[80%]  hover:bg-gray-700  duration-300' to='/jsintroduction'>
@@ -69,14 +69,14 @@ function JsFunction(){
      <p className="font-[Itel] text-xl">JavaScript functions are block of resuable code designed to perform specific task.They are fundamental building blocks in JavaScript and are essential for organizing code, promoting reusability, and creating dynamic and interactive web applications.</p>
     <h2 className="text-2xl font-bold py-3 font-[Roboto]">Declaring and Calling Functions</h2>
     <h3 className="text-xl font-bold font-[Itel] mb-3">Function Declaration</h3>
-    <div className="w-[100%] py-3 px-4 bg-black text-green-600 rounded">
+    <div className="w-full py-3 px-4 bg-black text-green-600 rounded">
         function functionName(params) {
             // code to be executed
             // return result;
         }
     </div>
     <h3 className="text-xl font-[Itel] font-bold mb-3 py-2">Function Expression</h3>
-    <div className="w-[100%] py-3 px-4 bg-black text-green-600 rounded">
+    <div className="w-full py-3 px-4 bg-black text-green-600 rounded">
       const functionName  =function(parameter1, parameter2 ) {
             // code to be executed
             // return result;
@@ -84,12 +84,12 @@ function JsFunction(){
     </div>
     <h3 className="text-xl font-[Itel] mb-3 py-2"><strong>Arrow Function:</strong> A more concise syntax for function expressions.
     </h3>
-    <div className="w-[100%] py-3 px-4 bg-black text-green-600 rounded">
+    <div className="w-full py-3 px-4 bg-black text-green-600 rounded">
       const add =(a,b)=&a+b;
     </div> 
     <h3 className="text-xl font-[Itel] mb-3 py-2"><strong>Calling a function:</strong>To execute the code within a function, yo call or invoke it by its name followed by parantheses.
     </h3>
-    <div className="w-[100%] py-3 px-4 bg-black text-green-600 rounded">
+    <div className="w-full py-3 px-4 bg-black text-green-600 rounded">
       functionName(argument1, argument2);
     </div> 
     </div>

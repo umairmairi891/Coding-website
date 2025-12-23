@@ -24,17 +24,6 @@ const {ligthBackground,darkBackground}=useBackground()
               <img className='w-25 h-12 mt-2' src="/Images/Gemini_Generated_Image_jtostqjtostqjtos-removebg-preview.png" alt="" />
             </Link>
           </div>
-          <div className="cursor-pointer">
-            <button className="font-bold cursor-pointer font-[Lato] text-2xl text-white" onClick={()=>setBackgroundButton(!backgroundButton)}>Theme</button>
-            {
-              backgroundButton&&(
-                <div className="flex flex-col absolute bg-black text-white px-5 py-2 rounded text-xl font-[Itel]">
-                  <button className="cursor-pointer" onClick={()=>{darkBackground(); setBackgroundButton(!backgroundButton)}}>Dark</button>
-                  <button className="cursor-pointer" onClick={()=>{ligthBackground(); setBackgroundButton(!backgroundButton)} }>Light</button>
-                </div>
-              )
-            }
-          </div>
           <div className='flex '>
             <ul className='md:flex hidden text-white space-x-10 mr-5 font-[Roboto] text-xl '>
               <li>
@@ -69,7 +58,7 @@ const {ligthBackground,darkBackground}=useBackground()
                           </NavLink>
                         </li>
                         <li className="px-5 py-2  hover:bg-teal-500 duration-300" onClick={() => { setdropDown(!dropDown) }}>
-                          <NavLink to='/pythonsyntax' >
+                          <NavLink to='/python' >
                             Python
                           </NavLink>
                         </li>
@@ -82,6 +71,19 @@ const {ligthBackground,darkBackground}=useBackground()
                     </div>
                   )}
                 </div>
+              </li>
+              <li>
+                  
+            <button className=" cursor-pointer  text-white" onClick={()=>setBackgroundButton(!backgroundButton)}>Theme</button>
+            {
+              backgroundButton&&(
+                <div className="flex flex-col absolute bg-black text-white px-5 py-2 rounded text-xl font-[Itel]">
+                  <button className="cursor-pointer" onClick={()=>{darkBackground(); setBackgroundButton(!backgroundButton)}}>Dark</button>
+                  <button className="cursor-pointer" onClick={()=>{ligthBackground(); setBackgroundButton(!backgroundButton)} }>Light</button>
+                </div>
+              )
+            }
+                
               </li>
             </ul>
           </div >

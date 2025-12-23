@@ -16,7 +16,7 @@ function JsDOM(){
 
                 {
                     isOpen && (
-                        <div className="bg-cyan-900 h-auto navbar animate-animated  text-white rounded w-[100%] sm:sw-[30%] md:w-[30%] lg:w-[20%] absolute top-16 left-0 md:left-0">
+                        <div className="bg-cyan-900 h-auto navbar animate-animated  text-white rounded w-full sm:sw-[30%] md:w-[30%] lg:w-[20%] absolute top-16 left-0 md:left-0">
                             <ul className=" text-lg font-[Roboto]">
                                 <div className="flex justify-between items-center">
                                     <NavLink className='w-[80%]  hover:bg-gray-700  duration-300' to='/jsintroduction'>

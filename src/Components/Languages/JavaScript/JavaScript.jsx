@@ -17,7 +17,7 @@ function JavaScript() {
 
                 {
                     isOpen && (
-                        <div className="bg-cyan-900 navbar h-auto animate-animated  text-white  w-[100%] sm:sw-[30%] md:w-[30%] lg:w-[20%] absolute top-16 left-0 md:left-0">
+                        <div className="bg-cyan-900 navbar h-auto animate-animated  text-white  w-full sm:sw-[30%] md:w-[30%] lg:w-[20%] absolute top-16 left-0 md:left-0">
                             <ul className=" text-lg font-[Roboto]">
                                 <div className="flex justify-between items-center">
                                 <NavLink className='w-[80%]  hover:bg-gray-700  duration-300' to='/jsintroduction'>
@@ -70,7 +70,7 @@ function JavaScript() {
                 <div className="p-6  bg-white-500 w-full" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }} >
                     <h2 className="text-lg md:text-2xl font-semibold border-l-5 border-blue-800 pl-5 font-[Roboto]"> <span className="mr-3">🔰</span>Syntax Overview</h2>
 
-                    <div className="w-[100%] md:w-[100%] h-auto bg-black text-green-600 mt-4 py-4 rounded">
+                    <div className="w-full full h-auto bg-black text-green-600 mt-4 py-4 rounded">
                         <p className="px-3">
                             console.log('Hello')
                         </p>
@@ -81,8 +81,8 @@ function JavaScript() {
                 </div>
 
                 <div className=" p-6 mt-4   bg-white-500 w-full" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)' }} >
-                    <h2 className="text-2xl font-semibold border-l-5 border-blue-800 pl-5"> <span className="mr-3">🛠</span>Use Cases</h2>
-                    <div className="grid gap-10 grid-cols-1 sm:grid-cols-12 pt-3 md:pt-0">
+                    <h2 className="text-2xl font-semibold border-l-5 border-blue-800 pl-5 py-3"> <span className="mr-3">🛠</span>Use Cases</h2>
+                    <div className="grid gap-10 grid-cols-1 sm:grid-cols-12 mt-4 pt-3 md:pt-0">
                         <div className="bg-gray-400 p-3 col-span-4 rounded-xl h-auto text-center hover:scale-110 cursor-pointer duration-300">
                             <h2 className=" text-2xl font-bold font-[Roboto] py-2">Web Development</h2>
                             <p className="font-[Itel] text-xl">JavaScript used for web Development using HTML, CSS and Frameworks</p>
