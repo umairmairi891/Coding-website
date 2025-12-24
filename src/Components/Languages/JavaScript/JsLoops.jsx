@@ -16,7 +16,7 @@ function JsLoops() {
 
                 {
                     isOpen && (
-                        <div className="bg-cyan-900 h-auto navbar animate-animated  text-white rounded w-[100%] sm:sw-[30%] md:w-[30%] lg:w-[20%] absolute top-16 left-0 md:left-0">
+                        <div className="bg-cyan-900 h-auto navbar animate-animated  text-white rounded w-full sm:sw-[30%] md:w-[30%] lg:w-[20%] absolute top-16 left-0 md:left-0">
                             <ul className=" text-lg font-[Roboto]">
                                 <div className="flex justify-between items-center">
                                     <NavLink className='w-[80%]  hover:bg-gray-700  duration-300' to='/jsintroduction'>
@@ -74,29 +74,29 @@ function JsLoops() {
                             <li className="py-2"><strong>Condition:</strong> Evaluated before each iteration; the loop continues as long as this condition is true <strong>i &#60; 5</strong></li>
                             <li className="py-2"><strong>Update Expression:</strong>Excuted after each iteration <strong>i ++</strong></li>
                         </ul>
-                        <div className="w-[100%] py-3 px-4 h-auto bg-black text-green-600 rounded">
+                        <div className="w-full py-3 px-4 h-auto bg-black text-green-600 rounded">
                             for(let i=0; i &#60; 5; i++){console.log('Iteration')}
                         </div>
 
                         <h3 className="text-xl font-[Roboto] py-4"><strong className="px-4 text-2xl">While Loop:</strong>This loop repeatedly executes a block of code as long as a specific condition remains true. The condition is checked before each iteration. </h3>
-                        <div className="w-[100%] py-3 px-4 h-auto bg-black text-green-600 rounded">
+                        <div className="w-full py-3 px-4 h-auto bg-black text-green-600 rounded">
                             let count=0;
                             while (count &#60; 3)   console.log('count')
                             count++
                         </div>
 
                         <h3 className="text-xl font-[Roboto] py-4"><strong className="px-4 text-2xl">Do...While Loop:</strong>Similar to the while loop, but the code block is executed at least once before the condition is checked.The condition is checked after each iteration. </h3>
-                        <div className="w-[100%] py-3 px-4 h-auto bg-black text-green-600 rounded">
+                        <div className="w-full py-3 px-4 h-auto bg-black text-green-600 rounded">
                             let x=0;
                             do console.log('Value of X')       while(x &#60 3)
                         </div>
 
                         <h3 className="text-xl font-[Roboto] py-4"><strong className="px-4 text-2xl">For...in Loop</strong>This loop iterates over enumerable properties of an object. It is generally used for iterating over object keys.  </h3>
-                        <div className="w-[100%] py-3 px-4 h-auto bg-black text-green-600 rounded">
+                        <div className="w-full py-3 px-4 h-auto bg-black text-green-600 rounded">
                             for (const key in person){console.log('key', 'person')};
                         </div>
                         <h3 className="text-xl font-[Roboto] py-4"> <strong className="px-4 text-2xl">For...of Loop </strong>This loop iterates over iterable objects (like arrays, strings , Maps and sets), providing access to the values of the elements.</h3>
-                        <div className="w-[100%] py-3 px-4 h-auto bg-black text-green-600 rounded">
+                        <div className="w-full py-3 px-4 h-auto bg-black text-green-600 rounded">
                             for (const fruit of fruits){console.log('fruit')};
                         </div>
                     </div>

@@ -50,7 +50,7 @@ const {ligthBackground,darkBackground}=useBackground()
                     Languages
                   </div>
                   {dropDown && (
-                    <div className=" absolute right-2 ">
+                    <div className=" absolute  ">
                       <ul className="bg-gray-300 rounded text-black">
                         <li className="px-5 py-2 hover:bg-teal-500 duration-300 " onClick={() => { setdropDown(!dropDown) }}>
                           <NavLink to='/javascript' >
@@ -130,7 +130,7 @@ const {ligthBackground,darkBackground}=useBackground()
                           </NavLink>
                         </li>
                         <li className="px-5 py-2  hover:bg-teal-500 duration-300" onClick={() => { setdropDown(!dropDown) }}>
-                          <NavLink to='/python' >
+                          <NavLink to='/python' onClick={()=>setIsOpen(!isOpen)}>
                             Python
                           </NavLink>
                         </li>
@@ -139,10 +139,24 @@ const {ligthBackground,darkBackground}=useBackground()
                             Java
                           </NavLink>
                         </li>
+                   
                       </ul>
                     </div>
                   )}
                 </div>
+              </li>
+                   <li>
+                  
+            <button className=" cursor-pointer  text-white" onClick={()=>setBackgroundButton(!backgroundButton)}>Theme</button>
+            {
+              backgroundButton&&(
+                <div className="flex flex-col absolute bg-black text-white px-5 py-2 rounded text-xl font-[Itel]">
+                  <button className="cursor-pointer" onClick={()=>{darkBackground(); setBackgroundButton(!backgroundButton)}}>Dark</button>
+                  <button className="cursor-pointer" onClick={()=>{ligthBackground(); setBackgroundButton(!backgroundButton)} }>Light</button>
+                </div>
+              )
+            }
+                
               </li>
             </ul>
           </div>

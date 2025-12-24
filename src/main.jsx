@@ -37,6 +37,13 @@ import PyHistory from './Components/Languages/Python/PyHistory.jsx'
 import PyWorking from './Components/Languages/Python/PyWorking.jsx'
 import PyVariable from './Components/Languages/Python/PyVariables.jsx'
 import PyDataTypes from './Components/Languages/Python/PyDataTypes.jsx'
+import PyFunction from './Components/Languages/Python/PyFunction.jsx'
+import PyOperator from './Components/Languages/Python/PyOperator.jsx'
+import PyLoops from './Components/Languages/Python/PyLoops.jsx'
+import PyObjects from './Components/Languages/Python/PyObjects.jsx'
+import PyClasses from './Components/Languages/Python/PyClasses.jsx'
+import PyComparison from './Components/Languages/Python/PyComparison.jsx'
+import PyLibraries from './Components/Languages/Python/PyLibraries.jsx'
 
 const router =createBrowserRouter(
   createRoutesFromElements(
@@ -66,7 +73,7 @@ const router =createBrowserRouter(
       <Route path='jsoperator' element={<JsOperator/>}/>
       <Route path='jsloops' element={<JsLoops/>}/>
       <Route path='jsobjects' element={<JsObjects/>}/>
-      <Route path='jsclasses' element={<JsClasses/>}/>
+      <Route path='jsclasses' element={<JsClasses/>}/>  
       <Route path='jsdom' element={<JsDOM/>}/>
       <Route path='jscomparison' element={<JsComparison/>}/>
       <Route path='python' element={<Python/>}/>
@@ -75,6 +82,13 @@ const router =createBrowserRouter(
       <Route path='pyworking' element={<PyWorking/>}/>
       <Route path='pyvariable' element={<PyVariable/>}/>
       <Route path='pydatatypes' element={<PyDataTypes/>}/>
+      <Route path='pyfunction' element={<PyFunction/>}/>
+      <Route path='pyoperator' element={<PyOperator/>}/>
+      <Route path='pyloops' element={<PyLoops/>}/>
+      <Route path='pyobjects' element={<PyObjects/>}/>
+      <Route path='pyclasses' element={<PyClasses/>}/>
+      <Route path='pylibraries' element={<PyLibraries/>}/>
+      <Route path='pycomparison' element={<PyComparison/>}/>
     </Route>
   )
 )
