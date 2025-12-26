@@ -4,6 +4,7 @@ import Header from './Components/Header/Header'
 import Footer from './Components/Footer/Footer'
 import { Outlet } from 'react-router-dom'
 import { WebsiteProvider } from './Components/Context/WebsiteContext'
+
 function App() {
   const [background, setBackground]=useState('light')
  const ligthBackground=()=>{

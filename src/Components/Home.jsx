@@ -10,12 +10,12 @@ function Home() {
 
   const handleLanguage=(lang)=>{
    const newlang=lang.toLowerCase();
-   setLanguage(newlang)
+   setLanguage(newlang);
   }
 
   const handleType=(type)=>{
   const newType=type.toLowerCase();
-  setType(newType)
+  setType(newType);
   }
   
   const getImagePath = (type) => {

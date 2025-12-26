@@ -3,13 +3,14 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import Home from './Components/Home.jsx'
+import Login from './Components/Sign/login/Login.jsx'
 import About from './Components/About.jsx'
 import ContactUs from './Components/Footer/Contact.jsx'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider, Routes } from 'react-router-dom'
 import Syntax from './Components/Syntax.jsx'
 import PythonSyntax from './Components/Languages/Python/PythonSyntax.jsx'
 import JsSyntax from './Components/Languages/JavaScript/JsSyntax.jsx'
-import CplusplusSyntax from './Components/Languages/CplusplusSyntax.jsx'
+import CplusplusSyntax from './Components/Languages/CPP/CplusplusSyntax.jsx'
 import Community from './Components/Footer/Community.jsx'
 import Career from './Components/Footer/Career.jsx'
 import Team from './Components/Footer/Team.jsx'
@@ -44,11 +45,22 @@ import PyObjects from './Components/Languages/Python/PyObjects.jsx'
 import PyClasses from './Components/Languages/Python/PyClasses.jsx'
 import PyComparison from './Components/Languages/Python/PyComparison.jsx'
 import PyLibraries from './Components/Languages/Python/PyLibraries.jsx'
+import CPlusPlus from './Components/Languages/CPP/Cpp.jsx'
+import CPlusPlusSyntax from './Components/Languages/CPP/CplusplusSyntax.jsx'
+import CppIntroduction from './Components/Languages/CPP/CppIntroduction.jsx'
+import CppHistory from './Components/Languages/CPP/CppHistory.jsx'
+import CppWorking from './Components/Languages/CPP/CppWorking.jsx'
+import CppVariable from './Components/Languages/CPP/CppVariables.jsx'
+import CppDataTypes from './Components/Languages/CPP/CppDataTypes.jsx'
+import CppFunction from './Components/Languages/CPP/CppFunction.jsx'
+import CppOperator from './Components/Languages/CPP/CppOperator.jsx'
+import CppLoops from './Components/Languages/CPP/CppLoop.jsx'
 
 const router =createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App/>}>
       <Route path='' element={<Home/>} />
+      <Route path='login' element={<Login/>} />
       <Route path='about' element={<About/>} />
       <Route path='community' element={<Community/>} />
       <Route path='career' element={<Career/>} />
@@ -89,6 +101,16 @@ const router =createBrowserRouter(
       <Route path='pyclasses' element={<PyClasses/>}/>
       <Route path='pylibraries' element={<PyLibraries/>}/>
       <Route path='pycomparison' element={<PyComparison/>}/>
+      <Route path='cpp' element={<CPlusPlus/>}/>
+      <Route path='cppsyntax' element={<CPlusPlusSyntax/>}/>
+      <Route path='cppintroduction' element={<CppIntroduction/>}/>
+      <Route path='cpphistory' element={<CppHistory/>}/>
+      <Route path='cppworking' element={<CppWorking/>}/>
+      <Route path='cppvariable' element={<CppVariable/>}/>
+      <Route path='cppdatatypes' element={<CppDataTypes/>}/>
+      <Route path='cppfunction' element={<CppFunction />}/>
+      <Route path='cppoperator' element={<CppOperator />}/>
+      <Route path='cpploops' element={<CppLoops/>}/>
     </Route>
   )
 )

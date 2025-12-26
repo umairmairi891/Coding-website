@@ -63,8 +63,8 @@ const {ligthBackground,darkBackground}=useBackground()
                           </NavLink>
                         </li>
                         <li className="px-5 py-2  hover:bg-teal-500 duration-300" onClick={() => { setdropDown(!dropDown) }}>
-                          <NavLink to='/java' >
-                            Java
+                          <NavLink to='/cpp'onClick={()=>setIsOpen(!isOpen)} >
+                            C++
                           </NavLink>
                         </li>
                       </ul>
@@ -84,6 +84,12 @@ const {ligthBackground,darkBackground}=useBackground()
               )
             }
                 
+              </li>
+              <li>
+                <NavLink to='/login' className={({ isActive }) =>
+                  `${isActive ? 'text-orange-600 font-bold' : "text-white"}`}>
+                  Login
+                </NavLink>
               </li>
             </ul>
           </div >
@@ -135,8 +141,8 @@ const {ligthBackground,darkBackground}=useBackground()
                           </NavLink>
                         </li>
                         <li className="px-5 py-2  hover:bg-teal-500 duration-300" onClick={() => { setdropDown(!dropDown) }}>
-                          <NavLink to='/java' >
-                            Java
+                          <NavLink to='/cpp'  onClick={()=>setIsOpen(!isOpen)}>
+                            C++
                           </NavLink>
                         </li>
                    
