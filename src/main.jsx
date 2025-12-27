@@ -55,12 +55,17 @@ import CppDataTypes from './Components/Languages/CPP/CppDataTypes.jsx'
 import CppFunction from './Components/Languages/CPP/CppFunction.jsx'
 import CppOperator from './Components/Languages/CPP/CppOperator.jsx'
 import CppLoops from './Components/Languages/CPP/CppLoop.jsx'
+import CppObjects from './Components/Languages/CPP/CppObjects.jsx'
+import CppClasses from './Components/Languages/CPP/CppClasses.jsx'
+import CppLibraries from './Components/Languages/CPP/CppLibrary.jsx'
+import CppComparison from './Components/Languages/CPP/CppComaprison.jsx'
+import AuthContainer from './Components/Sign/login/Authentication.jsx'
 
 const router =createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App/>}>
       <Route path='' element={<Home/>} />
-      <Route path='login' element={<Login/>} />
+      <Route path='login' element={<AuthContainer/>} />
       <Route path='about' element={<About/>} />
       <Route path='community' element={<Community/>} />
       <Route path='career' element={<Career/>} />
@@ -111,6 +116,10 @@ const router =createBrowserRouter(
       <Route path='cppfunction' element={<CppFunction />}/>
       <Route path='cppoperator' element={<CppOperator />}/>
       <Route path='cpploops' element={<CppLoops/>}/>
+      <Route path='cppobjects' element={<CppObjects/>}/>
+      <Route path='cppclasses' element={<CppClasses/>}/>
+      <Route path='cpplibraries' element={<CppLibraries/>}/>
+      <Route path='cppcomparison' element={<CppComparison/>}/>
     </Route>
   )
 )
